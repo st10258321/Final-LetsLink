@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight"
+    tools:context=".fragments.GroupsFragment">
+
+    <!-- Header section -->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="My Groups"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Connect with your communities"
+            android:textColor="@color/stone"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter user name"
+            android:inputType="text"
+            android:textColor="@color/gray" />
+
+        <EditText
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter link"
+            android:inputType="text"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/orange_primary"
+            android:text="Send Invite"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/joinGroupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/orange_primary"
+            android:text="View Invites"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView + fade overlay -->
+    <FrameLayout
+        android:id="@+id/groups_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="84dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/groups_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Top fade -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/fade_top" />
+
+        <!-- Bottom fade -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/fade_bottom" />
+
+    </FrameLayout>
+
+</RelativeLayout>

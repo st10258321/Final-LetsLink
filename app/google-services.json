@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "270663535251",
+    "project_id": "letslink-46e58",
+    "storage_bucket": "letslink-46e58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270663535251:android:2f5d9c8e5597c503d19b66",
+        "android_client_info": {
+          "package_name": "com.example.letslink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270663535251-g77p1rbctpukjvmm4oql4rbn823gib8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.letslink",
+            "certificate_hash": "21f2d5654c34e8fe22259fcc4fdc02e025a5c0a1"
+          }
+        },
+        {
+          "client_id": "270663535251-vbornmgvgkdvnbpao88vevta77c5jros.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMue4bVpPy1c4exihnMnXSEVhojY_bg2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270663535251-vbornmgvgkdvnbpao88vevta77c5jros.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/midnight">
+
+
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_button"
+            android:scaleType="centerInside"
+            android:contentDescription="Back" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/group_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/braai_dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:text="Group Name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView for messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_input_layout"
+        android:layout_below="@id/top_bar"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Bottom Input Layout -->
+    <LinearLayout
+        android:id="@+id/message_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnight"
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="Send"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_send" />
+
+        <EditText
+            android:id="@+id/message_inputt"
+            android:layout_width="268dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_rounded"
+            android:hint="Type a message"
+            android:maxLines="4"
+            android:padding="10dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_add"
+            android:scaleType="centerInside"
+            app:fabSize="mini"
+            app:backgroundTint="@color/orange" />
+
+    </LinearLayout>
+
+    <!-- Floating Action Button (Main) -->
+
+
+
+    <!-- Sub FABs (hidden by default) -->
+
+
+
+    <LinearLayout
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            app:backgroundTint="@color/orange"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mic"
+            app:backgroundTint="@color/orange"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_document"
+            app:backgroundTint="@color/orange"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_poll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_poll"
+            app:backgroundTint="@color/orange"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gallery"
+            app:backgroundTint="@color/orange" />
+
+    </LinearLayout>
+
+</RelativeLayout>
