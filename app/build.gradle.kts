@@ -90,6 +90,7 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.androidx.compose.ui.text)
     implementation(libs.androidx.media3.common.ktx)
+    implementation(libs.volley)
 
     // Testing
     testImplementation(libs.junit)
@@ -140,6 +141,8 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.google.signin)
     implementation(libs.firebase.messaging)
+    implementation("com.google.firebase:firebase-firestore")
+
 
 //    // KotlinX IO (force-stable version)
 //    implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.5")
@@ -150,4 +153,17 @@ dependencies {
     testImplementation(libs.core.testing)
     testImplementation(libs.mockk)
     testImplementation(libs.kotlinx.coroutines.test)
+    //biometrics
+    implementation("androidx.biometric:biometric:1.2.0-alpha05")
+    //coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+    //map stuff
+    implementation(libs.play.services.maps)
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+
 }
+
+
+
