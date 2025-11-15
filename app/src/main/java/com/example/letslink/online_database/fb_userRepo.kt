@@ -87,4 +87,17 @@ class fb_userRepo(
         }
 
     }
+    fun updateUserEmergencyContact(userId : String, emergencyContact: String, callback : (Boolean) -> Unit){
+        database.child("users")
+            .child(userId)
+            .child("emergencyContact")
+            .setValue(emergencyContact)
+            .addOnCompleteListener {
+                if(it.isSuccessful){
+                    callback(true)
+                }else{
+                    callback(false)
+                }
+            }
+    }
 }

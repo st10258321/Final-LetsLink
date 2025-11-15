@@ -55,14 +55,15 @@
                 android:src="@drawable/ic_profile_circle" />
 
             <TextView
+                android:id="@+id/nameTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mphotlk"
-                android:textSize="22sp"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
                 android:layout_marginBottom="4dp"
-                android:fontFamily="sans-serif-medium" />
+                android:fontFamily="sans-serif-medium"
+                android:text="mphotlk"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <!-- Full name -->
             <TextView
@@ -93,30 +94,33 @@
                     android:fontFamily="sans-serif" />
 
                 <TextView
+                    android:id="@+id/emailTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="janedoe@gmail.com"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:padding="15dp"
-                    android:background="@drawable/info_card_background"
                     android:layout_marginBottom="12dp"
-                    android:fontFamily="sans-serif" />
+                    android:background="@drawable/info_card_background"
+                    android:fontFamily="sans-serif"
+                    android:padding="15dp"
+                    android:text="janedoe@gmail.com"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/dateOfBirthTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/_12_january_1991"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:padding="15dp"
                     android:background="@drawable/info_card_background"
-                    android:fontFamily="sans-serif" />
+                    android:fontFamily="sans-serif"
+                    android:padding="15dp"
+                    android:text="@string/_12_january_1991"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
             <!-- Emergency contacts -->
-            <TextView
+            <EditText
+                android:id="@+id/emergencyContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/add_emergency_contacts"

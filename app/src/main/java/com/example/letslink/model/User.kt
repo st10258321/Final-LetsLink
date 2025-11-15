@@ -13,5 +13,6 @@ data class User (
     var dateOfBirth: String = "",
     var email: String = "",
     var fcmToken: String? = "",
-    var liveLocation: String? = ""
+    var liveLocation: String? = "",
+    var emergencyContact : String? = ""
 )
