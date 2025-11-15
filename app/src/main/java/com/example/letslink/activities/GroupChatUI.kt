@@ -44,10 +44,17 @@ class GroupChatActivity : AppCompatActivity() {
     private val auth = com.google.firebase.auth.FirebaseAuth.getInstance()
 
     private var isFabOpen = false
+    private val goingHomeTxt = "I'm Going Home"
+    private val bathroomTxt = "I'm Going to the Bathroom"
+    private val generalAssistanceTxt = "I Need Assistance"
+    private val sosTxt = "SOS - NEED HELP"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var groupname : String = ""
+        var fcmTokens : List<String> = listOf()
+
         val currentUser = auth.currentUser
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
@@ -81,7 +88,16 @@ class GroupChatActivity : AppCompatActivity() {
             recyclerView.adapter = adapter
             recyclerView.scrollToPosition(adapter.itemCount - 1)
         }
-
+        if(isInternetAvailable(this)) {
+            chatRepo.getGroupMembers(groupID!!) { members ->
+                if (members.isNotEmpty()) {
+                    Log.d("check-memebers", members.toString())
+                    userRepo.getUsersFcmTokens(members) { tokens ->
+                            fcmTokens = tokens
+                    }
+                }
+            }
+        }
 
 
         // Send button
@@ -134,8 +150,67 @@ class GroupChatActivity : AppCompatActivity() {
 
         }
 
+
+        //pregenerated text implemented
+        val bathroom = findViewById<TextView>(R.id.bathroomTxt)
+        val goingHome = findViewById<TextView>(R.id.goingHomeTxt)
+        val generalAssistance = findViewById<TextView>(R.id.generalAssistanceTxt)
+        val groupSOS = findViewById<TextView>(R.id.groupSOSTxt)
+
+
+        bathroom.setOnClickListener {
+            chatRepo.sendMessage(groupID,bathroomTxt){success,message ->
+                if(success){
+                    try {
+                        PushApiClient.sendMessageNotification(this, fcmTokens, groupname, bathroomTxt)
+                    }catch(e: Exception){
+                        Log.d("check-error",e.toString())
+                    }
+
+                }
+            }
+        }
+        goingHome.setOnClickListener {
+            chatRepo.sendMessage(groupID,goingHomeTxt){success,message ->
+                if(success){
+                    try {
+                        PushApiClient.sendMessageNotification(this, fcmTokens, groupname, goingHomeTxt)
+                    }catch(e: Exception){
+                        Log.d("check-error",e.toString())
+                    }
+
+                }
+            }
+        }
+        generalAssistance.setOnClickListener {
+            chatRepo.sendMessage(groupID,generalAssistanceTxt){success,message ->
+                if(success){
+                    try {
+                        PushApiClient.sendMessageNotification(this, fcmTokens, groupname, generalAssistanceTxt)
+                    }catch(e: Exception){
+                        Log.d("check-error",e.toString())
+                    }
+
+                }
+            }
+        }
+        groupSOS.setOnClickListener {
+            chatRepo.sendMessage(groupID,sosTxt){success,message ->
+                if(success){
+                    try {
+                        PushApiClient.sendMessageNotification(this, fcmTokens, groupname, sosTxt)
+                    }catch(e: Exception){
+                        Log.d("check-error",e.toString())
+                    }
+
+                }
+            }
+        }
+
+
         // FAB toggle
         fabMain.setOnClickListener {
+
             if (isFabOpen) {
                 fabMenu.visibility = LinearLayout.GONE
                 fabMain.setImageResource(R.drawable.ic_add)
@@ -145,6 +220,7 @@ class GroupChatActivity : AppCompatActivity() {
             }
             isFabOpen = !isFabOpen
         }
+
     }
 
     private fun isInternetAvailable(context : Context): Boolean{

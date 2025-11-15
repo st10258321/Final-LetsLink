@@ -48,12 +48,12 @@ class fb_userRepo(
             }
 
     }
-    fun getUsersFcmTokens(userIDs : List<String>, callback :(List<String>) -> Unit) {
+    fun getUsersFcmTokens(userIDs : List<String>, callback :(MutableList<String>) -> Unit) {
         if (userIDs.isEmpty()) {
-            callback(emptyList())
+            callback(mutableListOf())
             return
         }
-
+        Log.d("check-userIDs", "${userIDs.size}")
         val tokens = mutableListOf<String>()
         var completedCount = 0
         val userRef = database.child("users")
@@ -66,7 +66,9 @@ class fb_userRepo(
                         if (token != null) {
                             Log.d("check-token", token)
                             tokens.add(token)
-                        }
+                        }else
+                            Log.d("check-token", "Token is null")
+
                         completedCount++
 
                         if (completedCount == userIDs.size) {

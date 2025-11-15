@@ -126,47 +126,94 @@
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="17dp"
         android:orientation="vertical"
+        android:padding="3dp"
         android:gravity="end"
         android:visibility="gone">
+        <TextView
+            android:id="@+id/bathroomTxt"
+            android:text="🚽"
+            android:clickable="true"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:background="@drawable/message_bg_icons"
+            />
+        <TextView
+            android:id="@+id/goingHomeTxt"
+            android:text="🏡"
+            android:clickable="true"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:background="@drawable/message_bg_icons"
+            />
+        <TextView
+            android:id="@+id/generalAssistanceTxt"
+            android:text="🙋‍♀️"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/message_bg_icons"
+            />
+        <TextView
+            android:id="@+id/groupSOSTxt"
+            android:text="🆘"
+            android:clickable="true"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:background="@drawable/message_bg_icons"
+            />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_camera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_camera"
-            app:backgroundTint="@color/orange"
-            android:layout_marginBottom="12dp" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_voice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_mic"
-            app:backgroundTint="@color/orange"
-            android:layout_marginBottom="12dp" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_documents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_document"
-            app:backgroundTint="@color/orange"
-            android:layout_marginBottom="12dp" />
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_camera"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_camera"-->
+<!--            app:backgroundTint="@color/orange"-->
+<!--            android:layout_marginBottom="12dp" />-->
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_poll"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_poll"
-            app:backgroundTint="@color/orange"
-            android:layout_marginBottom="12dp" />
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_voice"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_mic"-->
+<!--            app:backgroundTint="@color/orange"-->
+<!--            android:layout_marginBottom="12dp" />-->
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_images"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_gallery"
-            app:backgroundTint="@color/orange" />
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_documents"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_document"-->
+<!--            app:backgroundTint="@color/orange"-->
+<!--            android:layout_marginBottom="12dp" />-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_poll"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_poll"-->
+<!--            app:backgroundTint="@color/orange"-->
+<!--            android:layout_marginBottom="12dp" />-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_images"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_gallery"-->
+<!--            app:backgroundTint="@color/orange" />-->
 
     </LinearLayout>
 
