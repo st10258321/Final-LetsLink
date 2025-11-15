@@ -50,19 +50,31 @@ class AccountFragment : Fragment() {
         val userId = sharedPref.getString(SessionManager.KEY_USER_ID, "")
         lifecycleScope.launch {
           val user = userDao.getUserById(userId!!)
-            if(user != null){
-                dateOfBirth.text = user.dateOfBirth
-            }
-            if(user?.emergencyContact != ""){
-                emergencyContact.setText(user?.emergencyContact)
-            }
+        if(user != null){
+            emergencyContact.setText(user.emergencyContact)
+            dateOfBirth.text = user.dateOfBirth
+        }
+        if(user?.emergencyContact != ""){
+            emergencyContact.setText(user?.emergencyContact)
+        }
         }
         saveBtn.setOnClickListener {
+            //format the contact number
+            val eNumber = emergencyContact.text.toString()
+            var formattedNumber = eNumber.replace(Regex("[^0-9]"), "")
+            if(formattedNumber.startsWith("0")){
+                formattedNumber = "27" + formattedNumber.drop(1)
+            }else if(eNumber.length != 10){
+                Toast.makeText(requireContext(),"Invalid number",Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+
             //save the emergency contact to online and local database
             lifecycleScope.launch {
                 val user =   userDao.getUserById(userId!!)
                 if(user != null){
-                    user.emergencyContact = emergencyContact.text.toString()
+                    user.emergencyContact = formattedNumber
                     try {
                         userDao.upsertUser(user)
                     }catch(e : Exception){

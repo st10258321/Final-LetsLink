@@ -65,18 +65,11 @@
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
-            <!-- Full name -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mpho Tlokotsi"
-                android:textSize="16sp"
-                android:textColor="#9E9E9E"
-                android:layout_marginBottom="24dp"
-                android:fontFamily="sans-serif" />
+
 
             <!-- Info Items -->
             <LinearLayout
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -123,7 +116,9 @@
                 android:id="@+id/emergencyContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/add_emergency_contacts"
+                android:text=""
+                android:hint="0667856987"
+                android:textColorHint="@color/white"
                 android:textSize="16sp"
                 android:textColor="@android:color/white"
                 android:padding="15dp"
