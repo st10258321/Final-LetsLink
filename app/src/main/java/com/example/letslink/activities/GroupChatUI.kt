@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.letslink.R
 import com.example.letslink.adapters.MessagesAdapter
-import com.example.letslink.models.ChatMessage
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import android.widget.ImageButton
 import android.widget.TextView
@@ -218,7 +217,7 @@ class GroupChatActivity : AppCompatActivity() {
 
             if (isFabOpen) {
                 fabMenu.visibility = LinearLayout.GONE
-                fabMain.setImageResource(R.drawable.ic_add)
+                fabMain.setImageResource(R.drawable.ic_addpng)
             } else {
                 fabMenu.visibility = LinearLayout.VISIBLE
                 fabMain.setImageResource(R.drawable.ic_close)
