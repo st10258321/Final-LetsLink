@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:lineSpacingExtra="6sp"
-                        android:text="We collect only what's necessary to make planning trips with friends easy and safe, such as your profile info, trip details, and, if enabled, your location for group tracking. This data is used solely for features like coordinating plans, sharing updates, and letting friends see where you are if you choose."
+                        android:text="@string/we_collect_only_what_s_necessary_to_make_planning_trips_with_friends_easy_and_safe_such_as_your_profile_info_trip_details_and_if_enabled_your_location_for_group_tracking_this_data_is_used_solely_for_features_like_coordinating_plans_sharing_updates_and_letting_friends_see_where_you_are_if_you_choose"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:lineSpacingExtra="6sp"
-                        android:text="Your personal information and location are never shared without your permission. All data is encrypted during storage and transfer."
+                        android:text="@string/your_personal_information_and_location_are_never_shared_without_your_permission_all_data_is_encrypted_during_storage_and_transfer"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:lineSpacingExtra="6sp"
-                        android:text="We do not sell or rent your data to anyone. You can view, update, or delete your information at any time through the app's settings."
+                        android:text="@string/we_do_not_sell_or_rent_your_data_to_anyone_you_can_view_update_or_delete_your_information_at_any_time_through_the_app_s_settings"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -130,7 +130,7 @@
                 android:id="@+id/done_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Done"
+                android:text="@string/done"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:cornerRadius="12dp"

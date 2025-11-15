@@ -84,7 +84,7 @@ class GroupsFragment : Fragment() {
 
                     Toast.makeText(
                         requireContext(),
-                        "Group operation successful!",
+                        getString(R.string.gp9_group_operation_successful),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -142,7 +142,7 @@ class GroupsFragment : Fragment() {
             val recipientUsername = userName.text.toString().trim()
 //require context is needed to view toast for fragmenets (Ariel ,202
             if (recipientUsername.isBlank() || rawInviteLink.isBlank()) {
-                Toast.makeText(requireContext(), "User name or link is empty.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.gp9_user_name_or_link_empty), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -152,14 +152,14 @@ class GroupsFragment : Fragment() {
                 rawInviteLink.substringAfterLast("/")
             } catch (e: Exception) {
                 //require context is needed to view toast for fragmenets (Ariel ,202
-                Toast.makeText(requireContext(), "Invalid Group Link/ID format.", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), getString(R.string.gp9_invalid_group_link_format), Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
             // Check if the extracted ID is valid
             if (groupIdToSearch.length != 36) {
                 //require context is needed to view toast for fragmenets (Ariel ,202
-                Toast.makeText(requireContext(), "Invalid Group Link/ID format (ID not found).", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), getString(R.string.gp9_invalid_group_link_id_not_found), Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
@@ -170,14 +170,14 @@ class GroupsFragment : Fragment() {
             }
 
             if (groupToInviteFrom == null) {
-                Toast.makeText(requireContext(), "Group not found for this link/ID in your list.", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), getString(R.string.gp9_group_not_found_in_list), Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
             //Call ViewModel to find the user ID and send the invite
             lifecycleScope.launch {
                 viewModel.sendPersonalizedInvite(recipientUsername, groupToInviteFrom)
                 //require context is needed to view toast for fragmenets (Ariel ,202
-                Toast.makeText(requireContext(), "Processing invite to $recipientUsername...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.gp9_processing_invite, recipientUsername), Toast.LENGTH_SHORT).show()
             }
         }
     }

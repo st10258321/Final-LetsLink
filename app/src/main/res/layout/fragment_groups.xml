@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="My Groups"
+            android:text="@string/my_groups"
             android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Connect with your communities"
+            android:text="@string/connect_with_your_communities"
             android:textColor="@color/stone"
             android:textSize="16sp" />
 
@@ -40,7 +40,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter user name"
+            android:hint="@string/enter_user_name"
             android:inputType="text"
             android:textColor="@color/gray" />
 
@@ -48,7 +48,7 @@
             android:id="@+id/link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter link"
+            android:hint="@string/enter_link"
             android:inputType="text"
             android:textColor="@color/gray" />
 
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/orange_primary"
-            android:text="Send Invite"
+            android:text="@string/send_invite"
             android:textColor="@color/white" />
 
         <Button
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:text="View Invites"
+            android:text="@string/view_invites"
             android:textColor="@color/white" />
 
     </LinearLayout>

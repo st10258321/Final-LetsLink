@@ -2,13 +2,16 @@ package com.example.letslink.online_database
 
 import android.content.Context
 import android.util.Log
+import com.example.letslink.R
 import com.example.letslink.model.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.snapshots
 import kotlinx.coroutines.tasks.await
+import kotlin.context
 
-class fb_TaskRepo(context: Context)  {
+
+class fb_TaskRepo(private val context: Context)  {
     private val db = FirebaseDatabase.getInstance().reference
     private var auth = FirebaseAuth.getInstance()
     fun createTask(task : Task, callback: (Boolean, String?) -> Unit){
@@ -19,9 +22,9 @@ class fb_TaskRepo(context: Context)  {
             db.child("tasks").child(task.taskId).setValue(task)
                 .addOnCompleteListener { task ->
                     if(task.isSuccessful){
-                        callback(true, "Task created successfully")
+                        callback(true, context.getString(R.string.ctp9_task_created_successfully))
                     }else{
-                        callback(false, "Failed to create task, please try again later")
+                        callback(false, context.getString(R.string.ctp9_failed_to_create_task))
                     }
                 }
         }else{

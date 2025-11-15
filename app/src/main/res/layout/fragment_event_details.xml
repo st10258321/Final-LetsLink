@@ -68,7 +68,7 @@
                         android:id="@+id/txt_event_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Event Details"
+                        android:text="@string/event_details"
                         android:textColor="#F44A22"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -93,7 +93,7 @@
                     android:id="@+id/txt_event_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weekly Meeting"
+                    android:text="@string/weekly_meeting"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#F44A22"
@@ -103,7 +103,7 @@
                     android:id="@+id/txt_event_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Discussion of upcoming project milestones."
+                    android:text="@string/discussion_of_upcoming_project_milestones"
                     android:textSize="14sp"
                     android:textColor="@color/white"
                     android:layout_marginBottom="8dp"/>
@@ -140,7 +140,7 @@
                 android:id="@+id/txt_participants_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Participants"
+                android:text="@string/participants"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -166,7 +166,7 @@
                     android:id="@+id/txt_event_host"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hosted by Mpho"
+                    android:text="@string/hosted_by_mpho"
                     android:textColor="@color/white"
                     android:textSize="14sp"/>
             </LinearLayout>
@@ -189,7 +189,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="View ToDo List"
+                    android:text="@string/view_todo_list"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
@@ -213,7 +213,7 @@
                     android:id="@+id/txt_add_task"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Task"
+                    android:text="@string/add_task"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -225,7 +225,7 @@
                 android:padding="5dp"
                 android:layout_marginBottom="3dp"
                 android:textColor="@color/white"
-                android:text="Add this event to your groups"
+                android:text="@string/add_this_event_to_your_groups"
                 />
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -239,7 +239,7 @@
                     android:id="@+id/tvSelectedGroups"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Select Groups"
+                    android:text="@string/select_groups1"
                     android:padding="12dp"
                     android:textSize="14sp"
                     android:textColor="@color/white"
@@ -251,7 +251,7 @@
                 android:id="@+id/btnAddToGroups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add To Groups"
+                android:text="@string/add_to_groups"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/orange_primary"
                 />

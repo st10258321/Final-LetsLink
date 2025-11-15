@@ -45,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Quick Alerts"
+                        android:text="@string/quick_alerts"
                         android:textColor="@color/white"
                         android:textSize="32sp"
                         android:textStyle="bold" />
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:alpha="0.8"
-                        android:text="Your safety is our priority"
+                        android:text="@string/your_safety_is_our_priority"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
@@ -90,7 +90,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="System Status: Active"
+                            android:text="@string/system_status_active"
                             android:textColor="@color/white"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -100,7 +100,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:alpha="0.9"
-                            android:text="No active alerts detected"
+                            android:text="@string/no_active_alerts_detected"
                             android:textColor="@color/white"
                             android:textSize="14sp" />
 
@@ -121,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Quick Actions"
+                android:text="@string/quick_actions"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -167,7 +167,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bathroom"
+                            android:text="@string/bathroom"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -206,7 +206,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Going Home"
+                            android:text="@string/going_home"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -245,7 +245,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Help"
+                            android:text="@string/help"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -284,7 +284,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Need Assistance"
+                            android:text="@string/need_assistance"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -323,7 +323,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Medical Emergency"
+                            android:text="@string/medical_emergency"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -362,7 +362,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Security Need"
+                            android:text="@string/security_need"
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -395,7 +395,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
                         android:gravity="center"
-                        android:text="Emergency Actions"
+                        android:text="@string/emergency_actions"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -416,7 +416,7 @@
                             android:drawableStart="@drawable/ic_close"
                             android:drawablePadding="8dp"
                             android:drawableTint="@color/white"
-                            android:text="Cancel"
+                            android:text="@string/cancel"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="12dp" />
@@ -431,7 +431,7 @@
                             android:drawableStart="@drawable/ic_alert"
                             android:drawablePadding="8dp"
                             android:drawableTint="@color/white"
-                            android:text="SEND ALERT"
+                            android:text="@string/send_alert"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold"
@@ -448,7 +448,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Recent Alerts"
+                android:text="@string/recent_alerts"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -458,7 +458,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:alpha="0.8"
-                android:text="Notifications from your group"
+                android:text="@string/notifications_from_your_group"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 

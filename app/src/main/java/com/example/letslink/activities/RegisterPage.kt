@@ -41,7 +41,7 @@ class RegisterPage : AppCompatActivity() {
         sessionManager = SessionManager(this)
         // Initialize ViewModel
         val dao = LetsLinkDB.getDatabase(applicationContext).userDao()
-        val factory = ViewModelFactory(dao,sessionManager)
+        val factory = ViewModelFactory(dao,sessionManager,this)
         viewModel = ViewModelProvider(this, factory)[UserViewModel::class.java]
 
         val signInButton: TextView = findViewById(R.id.sign_in_link)
@@ -127,12 +127,12 @@ class RegisterPage : AppCompatActivity() {
             if (fName.isEmpty() || email.isEmpty() || password.isEmpty() ||
                 confirmPassword.isEmpty() || dateOfBirth.isEmpty()
             ) {
-                Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.rp9_all_fields_required), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             if (password != confirmPassword) {
-                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.rp9_passwords_do_not_match), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -151,7 +151,7 @@ class RegisterPage : AppCompatActivity() {
                             if (user != null) {
                                 Toast.makeText(
                                     this@RegisterPage,
-                                    "Account created successfully (local)",
+                                    getString(R.string.rp9_account_created_local),
                                     Toast.LENGTH_SHORT
                                 ).show()
 
@@ -164,7 +164,7 @@ class RegisterPage : AppCompatActivity() {
                                     if (success) {
                                         Toast.makeText(
                                             this@RegisterPage,
-                                            "Account created successfully (remote)",
+                                            getString(R.string.rp9_account_created_remote),
                                             Toast.LENGTH_SHORT
                                         ).show()
                                         startActivity(
@@ -176,7 +176,7 @@ class RegisterPage : AppCompatActivity() {
                                     } else {
                                         Toast.makeText(
                                             this@RegisterPage,
-                                            "Firebase error: $errorMessage",
+                                            getString(R.string.rp9_firebase_error, errorMessage),
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     }

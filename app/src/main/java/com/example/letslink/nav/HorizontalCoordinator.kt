@@ -1,5 +1,8 @@
 package com.example.letslink.nav
 
+import android.content.Context
+import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
@@ -17,12 +20,34 @@ import com.example.letslink.fragments.HomeFragment
 import com.example.letslink.fragments.SettingsFragment
 import com.example.letslink.fragments.CreateGroupFragment
 import com.example.letslink.activities.CreateCustomEventFragment // ⭐️ NEW IMPORT FOR CUSTOM EVENT
+import java.util.*
 
 class HorizontalCoordinator : AppCompatActivity() {
 
     private lateinit var navButtons: List<ImageButton>
     private lateinit var bottomNavBar: View
     private var currentIndex = 0
+
+    override fun attachBaseContext(newBase: Context) {
+        val prefs = newBase.getSharedPreferences("settings", Context.MODE_PRIVATE)
+        val lang = prefs.getString("app_language", "en") ?: "en"
+        val locale = Locale(lang)
+        val context = updateBaseContextLocale(newBase, locale)
+        super.attachBaseContext(context)
+    }
+
+    private fun updateBaseContextLocale(context: Context, locale: Locale): Context {
+        val config = Configuration(context.resources.configuration)
+        Locale.setDefault(locale)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            val localeList = android.os.LocaleList(locale)
+            android.os.LocaleList.setDefault(localeList)
+            config.setLocales(localeList)
+        } else {
+            config.setLocale(locale)
+        }
+        return context.createConfigurationContext(config)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -193,7 +218,7 @@ class HorizontalCoordinator : AppCompatActivity() {
     }
 
     private fun setNavBarState(isMapVisible: Boolean) {
-        // NEVER hide the navbar - always keep it visible
+        // NEVER hide the.navbar - always keep it visible
         bottomNavBar.visibility = View.VISIBLE
 
 //        if (isMapVisible) {

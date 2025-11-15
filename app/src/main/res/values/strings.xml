@@ -1,4 +1,24 @@
 <resources>
+
+    <string name="lang_english">English</string>
+    <string name="lang_zulu">Zulu</string>
+    <string name="lang_afrikaans">Afrikaans</string>
+    <string name="lang_shona">Shona</string>
+    <string name="lang_chinese">Chinese</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="notifications_label">Notifications</string>
+    <string name="click_noise_label">Click Noise</string>
+    <string name="share_location_label">Share Location</string>
+    <string name="sync_database_label">Sync Database</string>
+    <string name="view_privacy_policy_label">View Privacy Policy</string>
+    <string name="save_button">Save!</string>
+    <string name="language_changed">Language changed successfully</string>
+
+
+
+    <!-- Page: activity_login_page -->
+
     <string name="app_name">LetsLink</string>
     <string name="title_activity_event_voting">EventVoting</string>
     <string name="title_activity_event_voting_page">EventVotingPage</string>
@@ -7,43 +27,518 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="create_event">Create Event</string>
+    <string name="back">Back</string>
+    <string name="event_title">Event Title</string>
+    <string name="enter_event_title">Enter Event Title</string>
+    <string name="example_braai">E.g., Braai</string>
+    <string name="event_description">Event Description</string>
+    <string name="describe_your_description">Describe your description</string>
+    <string name="example_fun_time">E.g Fun time in the backyard with friends</string>
+    <string name="location">Location</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="example_zacks_house">E.g Zacks House</string>
+    <string name="start_time">Start Time</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="enter_start_time_of_event">Enter Start Time of event</string>
+    <string name="end_time">End Time</string>
+    <string name="enter_end_time_of_event">Enter End Time of event</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_groups">Select Groups</string>
+
+
+    <!-- Page: activity_login_page -->
+    <string name="alp_login">Login</string>
+    <string name="alp_email">Email</string>
+    <string name="alp_password">Password</string>
+    <string name="alp_remember_me">Remember me</string>
+    <string name="alp_forgot_password">Forgot password?</string>
+    <string name="alp_sign_in">Sign in</string>
+    <string name="alp_login_via_biometrics">Login via biomterics</string>
+    <string name="alp_dont_have_an_account">Don\'t have an account?</string>
+    <string name="alp_sign_up">Sign up</string>
+
+    <!-- Page: item_link -->
+    <string name="il_groups_chat">Groups Chat</string>
+    <string name="il_group_placeholder">group placeholder.</string>
+    <string name="il_invite_link">http://10.0.2.2:3000/invite/a923-34...</string>
+    <string name="il_join">join</string>
+
+    <!-- Page: item_task -->
+    <string name="it_task_placeholder">Task placeholder</string>
+    <string name="it_mark_as_done">Mark as done</string>
+
+    <!-- Page: activity_main -->
+    <string name="am_welcome">Welcome to LetsLink</string>
+
+    <!-- Page: fragment_first -->
+    <string name="ff_hello_first_fragment">Hello first fragment</string>
+    <string name="ff_next">Next</string>
+
+    <!-- Page: fragment_events -->
+    <string name="fe_no_events">No Events</string>
+    <string name="fe_create_event">Create Event</string>
+
+    <!-- Page: fragment_groups -->
+    <string name="fg_no_groups">No Groups</string>
+    <string name="fg_create_group">Create Group</string>
+
+    <!-- Page: fragment_second -->
+    <string name="fs_hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="fs_previous">Previous</string>
+
+    <!-- Page: item_group_card -->
+    <string name="igc_group_name">Group Name</string>
+    <string name="igc_group_description">Group Description</string>
+
+    <!-- Page: activity_compass -->
+    <string name="ac_compass">Compass</string>
+
+    <!-- Page: fragment_account -->
+    <string name="fa_account">Account</string>
+    <string name="fa_my_account">My Account</string>
+    <string name="fa_account_info">Account Info</string>
+    <string name="fa_to_do">To-Do</string>
+    <string name="fa_settings">Settings</string>
+    <string name="fa_user_safety">User Safety</string>
+    <string name="fa_logout">Logout</string>
+
+    <!-- Page: item_collab_task -->
+    <string name="ict_task_name">Task Name</string>
+    <string name="ict_assigned_to">Assigned to: User</string>
+    <string name="ict_completed">Completed</string>
+
+    <!-- Page: item_events_card -->
+    <string name="iec_event_title">Event Title</string>
+    <string name="iec_event_time">Event Time</string>
+    <string name="iec_event_location">Event Location</string>
+
+    <!-- Page: content_home_page -->
+    <string name="chp_hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Page: fragment_settings -->
+    <string name="fs_settings">Settings</string>
+    <string name="fs_edit_profile">Edit Profile</string>
+    <string name="fs_notifications">Notifications</string>
+    <string name="fs_privacy">Privacy</string>
+    <string name="fs_security">Security</string>
+    <string name="fs_help_and_support">Help &amp; Support</string>
+    <string name="fs_about">About</string>
+
+    <!-- Page: item_message_sent -->
+    <string name="ims_message">Message</string>
+    <string name="ims_timestamp">12:00 PM</string>
+
+    <!-- Page: activity_home_page -->
+    <string name="ahp_home">Home</string>
+
+    <!-- Page: activity_temp_menu -->
+    <string name="atm_main_menu">Main Menu</string>
+    <string name="atm_login">Login</string>
+    <string name="atm_register">Register</string>
+    <string name="atm_home">Home</string>
+    <string name="atm_to_do">To-Do</string>
+    <string name="atm_account">Account</string>
+    <string name="atm_settings">Settings</string>
+    <string name="atm_create_event">Create Event</string>
+    <string name="atm_create_task">Create Task</string>
+    <string name="atm_user_safety">User Safety</string>
+    <string name="atm_events_page">Events Page</string>
+    <string name="atm_groups_page">Groups Page</string>
+
+    <!-- Page: item_voting_result -->
+    <string name="ivr_option">Option</string>
+    <string name="ivr_votes">0 Votes</string>
+
+    <!-- Page: activity_to_do_page -->
+    <string name="atdp_my_tasks">My Tasks</string>
+
+    <!-- Page: fragment_friend_map -->
+    <string name="ffm_friend_map">Friend Map</string>
+
+    <!-- Page: activity_group_event -->
+    <string name="age_group_event">Group Event</string>
+    <string name="age_event_name">Event Name</string>
+    <string name="age_create_event">Create Event</string>
+    <string name="age_add_task">Add Task</string>
+
+    <!-- Page: activity_user_safety -->
+    <string name="aus_user_safety">User Safety</string>
+    <string name="aus_safety_tips">Safety Tips</string>
+    <string name="aus_report_user">Report a User</string>
+    <string name="aus_block_user">Block a User</string>
+    <string name="aus_emergency_contacts">Emergency Contacts</string>
+    <string name="aus_share_live_location">Share Live Location</string>
+
+    <!-- Page: fragment_create_group -->
+    <string name="fcg_create_group">Create Group</string>
+    <string name="fcg_group_name">Group Name</string>
+    <string name="fcg_group_description">Group Description</string>
+    <string name="fcg_create">Create</string>
+
+    <!-- Page: item_message_received -->
+    <string name="imr_message">Message</string>
+    <string name="imr_timestamp">12:00 PM</string>
+    <string name="imr_sender_name">Sender Name</string>
+
+    <!-- Page: activity_group_adapter -->
+    <string name="aga_group_name">Group Name</string>
+
+    <!-- Page: activity_group_details -->
+    <string name="agd_group_details">Group Details</string>
+    <string name="agd_group_name">Group Name</string>
+    <string name="agd_members">Members</string>
+    <string name="agd_add_member">Add Member</string>
+    <string name="agd_leave_group">Leave Group</string>
+
+    <!-- Page: activity_register_page -->
+    <string name="arp_register">Register</string>
+    <string name="arp_first_name">First Name</string>
+    <string name="arp_last_name">Last Name</string>
+    <string name="arp_email">Email</string>
+    <string name="arp_password">Password</string>
+    <string name="arp_confirm_password">Confirm Password</string>
+    <string name="arp_register_button">Register</string>
+    <string name="arp_already_have_account">Already have an account?</string>
+    <string name="arp_sign_in">Sign in</string>
+
+    <!-- Page: fragment_event_details -->
+    <string name="fed_event_details">Event Details</string>
+    <string name="fed_event_name">Event Name</string>
+    <string name="fed_time">Time:</string>
+    <string name="fed_location">Location:</string>
+    <string name="fed_description">Description:</string>
+    <string name="fed_going">Going</string>
+    <string name="fed_not_going">Not Going</string>
+    <string name="fed_maybe">Maybe</string>
+
+    <!-- Page: fragment_group_details -->
+    <string name="fgd_group_details">Group Details</string>
+    <string name="fgd_group_name">Group Name</string>
+    <string name="fgd_members">Members</string>
+    <string name="fgd_add_member">Add Member</string>
+    <string name="fgd_leave_group">Leave Group</string>
+    <string name="fgd_no_members">No members yet.</string>
+
+    <!-- Page: activity_received_links -->
+    <string name="arl_received_links">Received Links</string>
+
+    <!-- Page: fragment_group_chat_u_i -->
+    <string name="fgcui_type_message">Type a message...</string>
+
+    <!-- Page: item_ticketmaster_event -->
+    <string name="ite_event_name">Event Name</string>
+    <string name="ite_venue_name">Venue Name</string>
+    <string name="ite_event_date">Event Date</string>
+    <string name="ite_view_on_ticketmaster">View on Ticketmaster</string>
+
+    <!-- Page: activity_create_task_page -->
+    <string name="actp_create_task">Create Task</string>
+    <string name="actp_task_title">Task Title</string>
+    <string name="actp_task_description">Task Description</string>
+    <string name="actp_assign_to">Assign To</string>
+    <string name="actp_due_date">Due Date</string>
+    <string name="actp_create_task_button">Create Task</string>
+
+    <!-- Page: activity_privacy_policy_page -->
+    <string name="appp_privacy_policy">Privacy Policy</string>
+
+    <!-- Page: activity_reset_password_page -->
+    <string name="arpp_reset_password">Reset Password</string>
+    <string name="arpp_new_password">New Password</string>
+    <string name="arpp_confirm_new_password">Confirm New Password</string>
+    <string name="arpp_reset_button">Reset</string>
+
+    <!-- Page: activity_forgot_password_page -->
+    <string name="afpp_forgot_password">Forgot Password</string>
+    <string name="afpp_email">Email</string>
+    <string name="afpp_send_reset_link">Send Reset Link</string>
+
+    <!-- Page: activity_horizontal_coordinator -->
+    <string name="ahc_home">Home</string>
+    <string name="ahc_events">Events</string>
+    <string name="ahc_groups">Groups</string>
+    <string name="ahc_friends">Friends</string>
+    <string name="ahc_account">Account</string>
+
+    <!-- File: LoginPage.kt -->
+    <string name="lp9_authentication_error">Authentication error: %1$s</string>
+    <string name="lp9_user_chose_password_login">User chose password login</string>
+    <string name="lp9_authentication_succeeded">Authentication succeeded</string>
+    <string name="lp9_authentication_failed">Authentication failed</string>
+    <string name="lp9_biometric_login_title">Biometric Login</string>
+    <string name="lp9_biometric_login_subtitle">Log in using your fingerprint or face</string>
+    <string name="lp9_use_password">Use Password</string>
+    <string name="lp9_biometric_auth_not_available">Biometric authentication not available</string>
+    <string name="lp9_welcome_back">Welcome back, %1$s!</string>
+    <string name="lp9_user_account_not_found">User account not found</string>
+    <string name="lp9_no_saved_login">No saved login found</string>
+    <string name="lp9_user_not_found_incorrect_credentials">User not found: Incorrect credentials</string>
+    <string name="lp9_google_sign_in_failed">Google sign in failed</string>
+
+    <!-- File: LoginViewModel.kt -->
+    <string name="lvm9_email_is_required">Email is required</string>
+    <string name="lvm9_password_is_required">Password is required</string>
+    <string name="lvm9_user_id_not_found">User ID not found</string>
+    <string name="lvm9_login_failed">Login failed: %1$s</string>
+    <string name="lvm9_account_not_found">Account not found. Please register first.</string>
+    <string name="lvm9_database_error">Database error: %1$s</string>
+    <string name="lvm9_invalid_email_or_password">Invalid email or password</string>
+    <string name="lvm9_failed_to_retrieve_google_user_details">Failed to retrieve Google user details.</string>
+    <string name="lvm9_unknown_google_sign_in_error">Unknown Google Sign-In error</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_registration_successful">Registration successful</string>
+    <string name="rp9_registration_failed">Registration failed: %1$s</string>
+    <string name="rp9_passwords_do_not_match">Passwords do not match</string>
+    <string name="rp9_invalid_email">Invalid email</string>
+    <string name="rp9_password_too_short">Password must be at least 6 characters</string>
+
+    <!-- File: ToDoPage.kt -->
+    <string name="tdp9_delete_task_title">Delete Task</string>
+    <string name="tdp9_delete_task_message">Are you sure you want to delete this task?</string>
+    <string name="tdp9_yes">Yes</string>
+    <string name="tdp9_no">No</string>
+    <string name="tdp9_task_marked_as_done">Task marked as done</string>
+    <string name="tdp9_task_marked_as_not_done">Task marked as not done</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_please_fill_all_fields">Please fill all fields</string>
+    <string name="ctp9_task_created_successfully">Task created successfully</string>
+    <string name="ctp9_failed_to_create_task">Failed to create task</string>
+
+    <!-- File: GroupChatActivity.kt -->
+    <string name="gca9_message_cant_be_empty">Message can\'t be empty</string>
+    <string name="gca9_failed_to_send_message">Failed to send message</string>
+    <string name="gca9_leave_group_title">Leave Group</string>
+    <string name="gca9_leave_group_message">Are you sure you want to leave this group?</string>
+    <string name="gca9_you_have_left_the_group">You have left the group.</string>
+    <string name="gca9_failed_to_leave_group">Failed to leave group.</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_delete_group_title">Delete Group</string>
+    <string name="gp9_delete_group_message">Are you sure you want to delete this group?</string>
+    <string name="gp9_group_deleted_successfully">Group deleted successfully</string>
+    <string name="gp9_failed_to_delete_group">Failed to delete group</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_please_fill_all_fields">Please fill all fields</string>
+    <string name="cg9_group_created_successfully">Group created successfully</string>
+    <string name="cg9_failed_to_create_group">Failed to create group</string>
+
+    <!-- File: EventsPage.kt -->
+    <string name="ep9_failed_to_load_events">Failed to load events</string>
+
+    <!-- File: CreateCustomEvent.kt -->
+    <string name="cce9_please_fill_all_fields">Please fill all fields</string>
+    <string name="cce9_event_created_successfully">Event created successfully</string>
+    <string name="cce9_failed_to_create_event">Failed to create event</string>
+    <string name="cce9_event_created_online">Event created successfully!(online)</string>
+    <string name="cce9_event_creation_initiated">Event creation initiated!</string>
+    <string name="cce9_event_created_offline">Event created successfully!(offline)</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_all_fields_required">All fields are required</string>
+    <string name="rp9_account_created_local">Account created successfully (local)</string>
+    <string name="rp9_account_created_remote">Account created successfully (remote)</string>
+    <string name="rp9_firebase_error">Firebase error: %1$s</string>
+
+    <!-- File: GroupChatUI.kt -->
+    <string name="gca9_no_internet_connection">No internet connection</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_user_name_or_link_empty">User name or link is empty.</string>
+    <string name="gp9_invalid_group_link_format">Invalid Group Link/ID format.</string>
+    <string name="gp9_invalid_group_link_id_not_found">Invalid Group Link/ID format (ID not found).</string>
+    <string name="gp9_group_not_found_in_list">Group not found for this link/ID in your list.</string>
+    <string name="gp9_processing_invite">Processing invite to %1$s...</string>
+    <string name="gp9_group_operation_successful">Group operation successful!</string>
+
+    <!-- File: ReceivedLinks.kt -->
+    <string name="rl9_error_user_id_missing">Error: User ID is missing.</string>
+    <string name="rl9_no_invites_received">No invites received.</string>
+    <string name="rl9_attempting_to_join">Attempting to join %1$s...</string>
+    <string name="rl9_error_invalid_invite_link">Error: Cannot join group. Invalid invite link.</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_invite_link_copied">Invite link copied to clipboard.</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_task_creation_failed_locally">Task creation failed! (locally)</string>
+    <string name="ctp9_task_created_locally">Task created successfully! (locally)</string>
+
+    <!-- File: SettingsPage.kt -->
+    <string name="sp9_sync_successful">Sync successful</string>
+    <string name="sp9_sync_failed">Sync failed</string>
+    <string name="sp9_sync_events_tasks_failed">Sync events but Tasks Failed</string>
+    <string name="sp9_sync_tasks_events_failed">Sync tasks but Events Failed</string>
+
+    <!-- File: EventSwipe.kt -->
+    <string name="es9_you_disliked">You disliked %1$s</string>
+    <string name="es9_you_liked">You liked %1$s</string>
+
+    <!-- File: EventDetails.kt -->
+    <string name="ed9_event_added_to_groups">Event added to groups</string>
+
+    <!-- File: GroupDetailsF.kt -->
+    <string name="gdf9_no_events_found">No events found</string>
+
+    <!-- File: HomePage.kt -->
+    <string name="hp9_event_added_successfully">Event Added successfully!</string>
+    <string name="hp9_event_added_online">Event Added successfully!(online)</string>
 
     <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+    volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+    dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+    litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+    diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+    ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.
+
+    Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+    egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+    neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+    molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+    bibendum, vel congue leo egestas.
+
+    Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+    amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+    molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+    interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+    lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+    in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+    est.
+
+    Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+    Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+    non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+    eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+    quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+    ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+    placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+    convallis.
+
+    Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+    malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+    gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+    libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+    sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+    libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+    vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+</string>
+    <string name="mpho_tickets">Mpho Tickets!</string>
+    <string name="add_event">Add Event</string>
+    <string name="charity_run">Charity Run</string>
+    <string name="birthday_party">Birthday Party</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="_3_active">3 Active</string>
+    <string name="party_plans">Party Plans</string>
+    <string name="_5_unread">5 Unread</string>
+    <string name="family_group">Family Group</string>
+    <string name="_10_messages">10 Messages</string>
+    <string name="project_discussions">Project Discussions</string>
+    <string name="recent_chats">Recent Chats</string>
+    <string name="active_group_conversations">Active Group Conversations</string>
+    <string name="my_events">My Events</string>
+    <string name="check_out_your_events">Check out your events</string>
+    <string name="open_friend_compass">Open Friend Compass</string>
+    <string name="connect_with_your_communities">Connect with your communities</string>
+    <string name="my_groups">My Groups</string>
+    <string name="send_invite">Send Invite</string>
+    <string name="enter_link">Enter link</string>
+    <string name="view_invites">View Invites</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="settings">Settings</string>
+    <string name="change_language">Change Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="click_noise">Click Noise</string>
+    <string name="share_location">Share Location</string>
+    <string name="sync_database">Sync Database</string>
+    <string name="view_privacy_policy">View Privacy Policy</string>
+    <string name="save">Save!</string>
+    <string name="create_task">Create Task</string>
+    <string name="item_name">Item Name</string>
+    <string name="enter_item_name">Enter item name</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description</string>
+    <string name="duration_hours">Duration (hours)</string>
+    <string name="enter_duration_in_hours">Enter duration in hours</string>
+    <string name="due_date">Due Date</string>
+    <string name="save_task">Save Task</string>
+    <string name="forgot_your_password_enter_your_email_to_receive_otp_pin">Forgot your password? Enter your email to receive OTP pin.</string>
+    <string name="group_details">Group Details</string>
+    <string name="group_name">Group Name</string>
+    <string name="description_of_the_group">Description of the group</string>
+    <string name="members">Members</string>
+    <string name="admin">Admin</string>
+    <string name="group_activities">Group Activities</string>
+    <string name="messages">Messages</string>
+    <string name="events_created">Events Created</string>
+    <string name="tasks_completed">Tasks Completed</string>
+    <string name="create_event1">Create Event</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="event_name">Event Name:</string>
+    <string name="event_description1">Event description:</string>
+    <string name="event_location">Event Location:</string>
+    <string name="event_time">Event Time:</string>
+    <string name="active_group_conversations1">Active Group Conversations</string>
+    <string name="we_collect_only_what_s_necessary_to_make_planning_trips_with_friends_easy_and_safe_such_as_your_profile_info_trip_details_and_if_enabled_your_location_for_group_tracking_this_data_is_used_solely_for_features_like_coordinating_plans_sharing_updates_and_letting_friends_see_where_you_are_if_you_choose">We collect only what\'s necessary to make planning trips with friends easy and safe, such as your profile info, trip details, and, if enabled, your location for group tracking. This data is used solely for features like coordinating plans, sharing updates, and letting friends see where you are if you choose.</string>
+    <string name="your_personal_information_and_location_are_never_shared_without_your_permission_all_data_is_encrypted_during_storage_and_transfer">Your personal information and location are never shared without your permission. All data is encrypted during storage and transfer.</string>
+    <string name="we_do_not_sell_or_rent_your_data_to_anyone_you_can_view_update_or_delete_your_information_at_any_time_through_the_app_s_settings">We do not sell or rent your data to anyone. You can view, update, or delete your information at any time through the app\'s settings.</string>
+    <string name="done">Done</string>
+    <string name="invites">Invites</string>
+    <string name="connect_with_your_communities1">Connect with your communities</string>
+    <string name="create_your_profile">Create your profile</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="to_do_list">To-Do List</string>
+    <string name="add_location">Add Location</string>
+    <string name="_12_january_1991">12 January 1991</string>
+    <string name="add_emergency_contacts">Add Emergency Contacts</string>
+    <string name="save1">Save</string>
+    <string name="quick_alerts">Quick Alerts</string>
+    <string name="your_safety_is_our_priority">Your safety is our priority</string>
+    <string name="system_status_active">System Status: Active</string>
+    <string name="no_active_alerts_detected">No active alerts detected</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="going_home">Going Home</string>
+    <string name="help">Help</string>
+    <string name="need_assistance">Need Assistance</string>
+    <string name="medical_emergency">Medical Emergency</string>
+    <string name="security_need">Security Need</string>
+    <string name="emergency_actions">Emergency Actions</string>
+    <string name="cancel">Cancel</string>
+    <string name="send_alert">SEND ALERT</string>
+    <string name="recent_alerts">Recent Alerts</string>
+    <string name="notifications_from_your_group">Notifications from your group</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="e_g_squad_goals">E.g., Squad Goals</string>
+    <string name="describe_your_group">Describe your group</string>
+    <string name="e_g_for_planning_weekend_hikes_and_trips">E.g., For planning weekend hikes and trips.</string>
+    <string name="invite_members">Invite Members</string>
+    <string name="event_details">Event Details</string>
+    <string name="weekly_meeting">Weekly Meeting</string>
+    <string name="discussion_of_upcoming_project_milestones">Discussion of upcoming project milestones.</string>
+    <string name="participants">Participants</string>
+    <string name="hosted_by_mpho">Hosted by Mpho</string>
+    <string name="view_todo_list">View ToDo List</string>
+    <string name="add_task">Add Task</string>
+    <string name="add_this_event_to_your_groups">Add this event to your groups</string>
+    <string name="select_groups1">Select Groups</string>
+    <string name="add_to_groups">Add To Groups</string>
+    <string name="group_details1">Group Details</string>
+    <string name="group_name1">Group Name</string>
+    <string name="members1">Members</string>
+    <string name="voting_results">Voting Results</string>
+    <string name="in_progress1">In-Progress</string>
+    <string name="completed">Completed</string>
+    <string name="status">Status:</string>
+    <string name="time">Time:</string>
+    <string name="status1">Status :</string>
+    <string name="time1">Time:</string>
+
+
 </resources>

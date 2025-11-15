@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Group" android:textSize="20sp"
+            android:text="@string/fcg_create_group" android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_marginStart="12dp"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/orange_faded"
-                android:text="Upload Image"
+                android:text="@string/upload_image"
                 android:textColor="@color/orange_primary"
                 android:textSize="12sp"
                 app:cornerRadius="8dp"
@@ -77,7 +77,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Group Name" android:textSize="14sp"
+            android:text="@string/fcg_group_name" android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:hint="Enter Group Name" android:inputType="text"
+            android:hint="@string/enter_group_name" android:inputType="text"
             android:padding="10dp"
             android:textColor="@android:color/white"
             android:textColorHint="@color/stone"
@@ -96,14 +96,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E.g., Squad Goals" android:textSize="12sp"
+            android:text="@string/e_g_squad_goals" android:textSize="12sp"
             android:textColor="@color/stone"
             android:layout_marginBottom="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Group Description" android:textSize="14sp"
+            android:text="@string/fcg_group_description" android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
@@ -111,7 +111,7 @@
         <EditText
             android:id="@+id/etGroupDescription" android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Describe your group" android:textColor="@android:color/white"
+            android:hint="@string/describe_your_group" android:textColor="@android:color/white"
             android:textColorHint="@color/stone"
             android:backgroundTint="@color/orange_primary"
             android:padding="10dp"
@@ -123,14 +123,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E.g., For planning weekend hikes and trips." android:textSize="12sp"
+            android:text="@string/e_g_for_planning_weekend_hikes_and_trips" android:textSize="12sp"
             android:textColor="@color/stone"
             android:layout_marginBottom="32dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Invite Members"
+            android:text="@string/invite_members"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -143,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:backgroundTint="@color/orange_primary"
-            android:text="Create Group" />
+            android:text="@string/fcg_create" />
 
     </LinearLayout>
 </ScrollView>

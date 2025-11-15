@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="@string/alp_login"
                 android:textSize="48sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
@@ -64,7 +64,7 @@
                         android:id="@+id/email_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Email"
+                        android:hint="@string/alp_email"
                         android:inputType="textEmailAddress"
                         android:maxLines="1" />
 
@@ -87,7 +87,7 @@
                         android:id="@+id/password_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password"
+                        android:hint="@string/alp_password"
                         android:inputType="textPassword"
                         android:maxLines="1" />
 
@@ -97,7 +97,7 @@
                     android:id="@+id/remember_me_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Remember me"
+                    android:text="@string/alp_remember_me"
                     android:textColor="@color/white"
                     android:layout_marginBottom="16dp" />
                 <!-- Forgot Password -->
@@ -109,7 +109,7 @@
                     android:layout_marginBottom="24dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:text="Forgot password?"
+                    android:text="@string/alp_forgot_password"
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     android:textStyle="italic"
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:backgroundTint="@color/orange_primary"
-                    android:text="Sign in"
+                    android:text="@string/alp_sign_in"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:backgroundTint="@color/orange"
-                    android:text="Login via biomterics"
+                    android:text="@string/alp_login_via_biometrics"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:visibility="visible"
@@ -165,7 +165,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Don't have an account?"
+                        android:text="@string/alp_dont_have_an_account"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
@@ -176,7 +176,7 @@
                         android:layout_marginStart="4dp"
                         android:clickable="true"
                         android:focusable="true"
-                        android:text="Sign up"
+                        android:text="@string/alp_sign_up"
                         android:textColor="@color/orange_primary"
                         android:textSize="14sp"
                         android:textStyle="italic"

@@ -115,7 +115,7 @@ class CreateCustomEventFragment : Fragment() {
                 ) { isComplete, eventID ->
                     if (isComplete) {
 
-                        Toast.makeText(context, "Event created successfully!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, getString(R.string.cce9_event_created_successfully), Toast.LENGTH_SHORT).show()
                         //insert it locally now
                         val localEvent = Event(
                             eventId = eventID,
@@ -132,10 +132,10 @@ class CreateCustomEventFragment : Fragment() {
                         viewLifecycleOwner.lifecycleScope.launch {
                             try{
                                 eventDao.addEventLocally(localEvent)
-                                Toast.makeText(context, "Event created successfully!(online)", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, getString(R.string.cce9_event_created_online), Toast.LENGTH_SHORT).show()
 
                             }catch(e: Exception){
-                                Toast.makeText(context, "Event creation failed!", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, getString(R.string.cce9_failed_to_create_event), Toast.LENGTH_SHORT).show()
                                 Log.d("check-error",e.toString())
 
                             }
@@ -147,10 +147,10 @@ class CreateCustomEventFragment : Fragment() {
                         }, 1000)
 
                     } else {
-                        Toast.makeText(context, "Event creation failed!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, getString(R.string.cce9_failed_to_create_event), Toast.LENGTH_SHORT).show()
                     }
                 }
-                Toast.makeText(context, "Event creation initiated!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, getString(R.string.cce9_event_creation_initiated), Toast.LENGTH_SHORT).show()
             }else{
                 //insert the event locally
                 val localEvent = Event(
@@ -168,13 +168,13 @@ class CreateCustomEventFragment : Fragment() {
                 viewLifecycleOwner.lifecycleScope.launch {
                     try {
                         eventDao.addEventLocally(localEvent)
-                        Toast.makeText(context, "Event created successfully!(offline)", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, getString(R.string.cce9_event_created_offline), Toast.LENGTH_SHORT).show()
                         view.postDelayed({
                             parentFragmentManager.popBackStack()
                         }, 1000)
                     }catch (e:Exception){
                         Log.d("check-error",e.toString())
-                        Toast.makeText(context, "Event creation failed!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, getString(R.string.cce9_failed_to_create_event), Toast.LENGTH_SHORT).show()
                     }
                 }
             }

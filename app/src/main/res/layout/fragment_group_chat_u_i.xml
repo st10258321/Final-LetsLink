@@ -92,7 +92,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/edittext_rounded"
-            android:hint="Type a message"
+            android:hint="@string/fgcui_type_message"
             android:maxLines="4"
             android:padding="10dp" />
 

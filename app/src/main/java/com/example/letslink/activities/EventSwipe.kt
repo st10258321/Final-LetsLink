@@ -42,11 +42,11 @@ fun EventVotingScreen(events:List<EventVoting_m>, groupId: String, userId: Strin
         events = events,
         onSwipeLeft ={ event ->
             saveVote(groupId, event.eventId, userId,"dislike")
-            Toast.makeText(context, "You disliked ${event.title}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, context.getString(R.string.es9_you_disliked, event.title), Toast.LENGTH_SHORT).show()
         },
         onSwipeRight = { event ->
             saveVote(groupId, event.eventId, userId,"like")
-            Toast.makeText(context, "You liked ${event.title}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, context.getString(R.string.es9_you_liked, event.title), Toast.LENGTH_SHORT).show()
         }
     )
 }

@@ -1,0 +1,549 @@
+<resources>
+
+    <string name="lang_english">IsiNgisi</string>
+    <string name="lang_zulu">IsiZulu</string>
+    <string name="lang_afrikaans">IsiBhunu</string>
+    <string name="lang_shona">IsiShona</string>
+    <string name="lang_chinese">IsiShayina</string>
+
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="notifications_label">Izaziso</string>
+    <string name="click_noise_label">Umsindo Wokucofa</string>
+    <string name="share_location_label">Yabelana Ngendawo</string>
+    <string name="sync_database_label">Vunyelanisa Idatha</string>
+    <string name="view_privacy_policy_label">Buka Inqubomgomo Yobumfihlo</string>
+    <string name="save_button">Gcina!</string>
+    <string name="language_changed">Ulimi lushintshelwe ngempumelelo</string>
+
+
+
+    <!-- Page: activity_login_page -->
+
+    <string name="app_name">LetsLink</string>
+    <string name="title_activity_event_voting">Ukuvota Umcimbi</string>
+    <string name="title_activity_event_voting_page">Ikhasi Lokuvota Umcimbi</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Ingxenye Yokuqala</string>
+    <string name="second_fragment_label">Ingxenye Yesibili</string>
+    <string name="next">Okulandelayo</string>
+    <string name="previous">Okwedlule</string>
+    <string name="create_event">Dala Umcimbi</string>
+    <string name="back">Emuva</string>
+    <string name="event_title">Isihloko Somcimbi</string>
+    <string name="enter_event_title">Faka Isihloko Somcimbi</string>
+    <string name="example_braai">Isib. I-Braai</string>
+    <string name="event_description">Incazelo Yomcimbi</string>
+    <string name="describe_your_description">Chaza incazelo yakho</string>
+    <string name="example_fun_time">Isib. Isikhathi esijabulisayo emuva kwekhaya nabangani</string>
+    <string name="location">Indawo</string>
+    <string name="enter_location">Faka Indawo</string>
+    <string name="example_zacks_house">Isib. Indlu kaZack</string>
+    <string name="start_time">Isikhathi Sokuqala</string>
+    <string name="enter_time">Faka Isikhathi</string>
+    <string name="enter_start_time_of_event">Faka Isikhathi Sokuqala Somcimbi</string>
+    <string name="end_time">Isikhathi Sokuphela</string>
+    <string name="enter_end_time_of_event">Faka Isikhathi Sokuphela Somcimbi</string>
+    <string name="select_date">Khetha Usuku</string>
+    <string name="select_groups">Khetha Amaqembu</string>
+
+
+    <!-- Page: activity_login_page -->
+    <string name="alp_login">Ngena</string>
+    <string name="alp_email">I-imeyili</string>
+    <string name="alp_password">Iphasiwedi</string>
+    <string name="alp_remember_me">Ngikhumbule</string>
+    <string name="alp_forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="alp_sign_in">Ngena ngemvume</string>
+    <string name="alp_login_via_biometrics">Ngena ngezimpawu zomzimba</string>
+    <string name="alp_dont_have_an_account">Awunayo i-akhawunti?</string>
+    <string name="alp_sign_up">Bhalisela</string>
+
+    <!-- Page: item_link -->
+    <string name="il_groups_chat">Ingxoxo Yamaqembu</string>
+    <string name="il_group_placeholder">isikhala seqembu.</string>
+    <string name="il_invite_link">http://10.0.2.2:3000/invite/a923-34...</string>
+    <string name="il_join">joyina</string>
+
+    <!-- Page: item_task -->
+    <string name="it_task_placeholder">Isikhala somsebenzi</string>
+    <string name="it_mark_as_done">Maka njengoqediwe</string>
+
+    <!-- Page: activity_main -->
+    <string name="am_welcome">Siyakwamukela ku-LetsLink</string>
+
+    <!-- Page: fragment_first -->
+    <string name="ff_hello_first_fragment">Sawubona ingxenye yokuqala</string>
+    <string name="ff_next">Okulandelayo</string>
+
+    <!-- Page: fragment_events -->
+    <string name="fe_no_events">Awukho Imicimbi</string>
+    <string name="fe_create_event">Dala Umcimbi</string>
+
+    <!-- Page: fragment_groups -->
+    <string name="fg_no_groups">Awukho Amaqembu</string>
+    <string name="fg_create_group">Dala Iqembu</string>
+
+    <!-- Page: fragment_second -->
+    <string name="fs_hello_second_fragment">Sawubona ingxenye yesibili. I-Arg: %1$s</string>
+    <string name="fs_previous">Okwedlule</string>
+
+    <!-- Page: item_group_card -->
+    <string name="igc_group_name">Igama Leqembu</string>
+    <string name="igc_group_description">Incazelo Yeqembu</string>
+
+    <!-- Page: activity_compass -->
+    <string name="ac_compass">Ikampasi</string>
+
+    <!-- Page: fragment_account -->
+    <string name="fa_account">I-akhawunti</string>
+    <string name="fa_my_account">I-akhawunti Yami</string>
+    <string name="fa_account_info">Ulwazi Lwe-akhawunti</string>
+    <string name="fa_to_do">Okufanele Kwenziwe</string>
+    <string name="fa_settings">Izilungiselelo</string>
+    <string name="fa_user_safety">Ukuphepha Komsebenzisi</string>
+    <string name="fa_logout">Phuma</string>
+
+    <!-- Page: item_collab_task -->
+    <string name="ict_task_name">Igama Lomsebenzi</string>
+    <string name="ict_assigned_to">Kunikezwe: Umsebenzisi</string>
+    <string name="ict_completed">Kuqediwe</string>
+
+    <!-- Page: item_events_card -->
+    <string name="iec_event_title">Isihloko Somcimbi</string>
+    <string name="iec_event_time">Isikhathi Somcimbi</string>
+    <string name="iec_event_location">Indawo Yomcimbi</string>
+
+    <!-- Page: content_home_page -->
+    <string name="chp_hello_blank_fragment">Sawubona ingxenye engenalutho</string>
+
+    <!-- Page: fragment_settings -->
+    <string name="fs_settings">Izilungiselelo</string>
+    <string name="fs_edit_profile">Hlela Iphrofayili</string>
+    <string name="fs_notifications">Izaziso</string>
+    <string name="fs_privacy">Ubumfihlo</string>
+    <string name="fs_security">Ukuphepha</string>
+    <string name="fs_help_and_support">Usizo Nesekelo</string>
+    <string name="fs_about">Mayelana</string>
+
+    <!-- Page: item_message_sent -->
+    <string name="ims_message">Umlayezo</string>
+    <string name="ims_timestamp">12:00 PM</string>
+
+    <!-- Page: activity_home_page -->
+    <string name="ahp_home">Ikhaya</string>
+
+    <!-- Page: activity_temp_menu -->
+    <string name="atm_main_menu">Imenyu Eyinhloko</string>
+    <string name="atm_login">Ngena</string>
+    <string name="atm_register">Bhalisela</string>
+    <string name="atm_home">Ikhaya</string>
+    <string name="atm_to_do">Okufanele Kwenziwe</string>
+    <string name="atm_account">I-akhawunti</string>
+    <string name="atm_settings">Izilungiselelo</string>
+    <string name="atm_create_event">Dala Umcimbi</string>
+    <string name="atm_create_task">Dala Umsebenzi</string>
+    <string name="atm_user_safety">Ukuphepha Komsebenzisi</string>
+    <string name="atm_events_page">Ikhasi Lemicimbi</string>
+    <string name="atm_groups_page">Ikhasi Lamaqembu</string>
+
+    <!-- Page: item_voting_result -->
+    <string name="ivr_option">Inketho</string>
+    <string name="ivr_votes">0 Amavoti</string>
+
+    <!-- Page: activity_to_do_page -->
+    <string name="atdp_my_tasks">Imisebenzi Yami</string>
+
+    <!-- Page: fragment_friend_map -->
+    <string name="ffm_friend_map">Imephu Yabangani</string>
+
+    <!-- Page: activity_group_event -->
+    <string name="age_group_event">Umcimbi Weqembu</string>
+    <string name="age_event_name">Igama Lomcimbi</string>
+    <string name="age_create_event">Dala Umcimbi</string>
+    <string name="age_add_task">Engeza Umsebenzi</string>
+
+    <!-- Page: activity_user_safety -->
+    <string name="aus_user_safety">Ukuphepha Komsebenzisi</string>
+    <string name="aus_safety_tips">Amathiphu Okuphepha</string>
+    <string name="aus_report_user">Bika Umsebenzisi</string>
+    <string name="aus_block_user">Vimbela Umsebenzisi</string>
+    <string name="aus_emergency_contacts">Oxhumana Nabo Esimweni Esiphuthumayo</string>
+    <string name="aus_share_live_location">Yabelana Ngendawo Ephilayo</string>
+
+    <!-- Page: fragment_create_group -->
+    <string name="fcg_create_group">Dala Iqembu</string>
+    <string name="fcg_group_name">Igama Leqembu</string>
+    <string name="fcg_group_description">Incazelo Yeqembu</string>
+    <string name="fcg_create">Dala</string>
+
+    <!-- Page: item_message_received -->
+    <string name="imr_message">Umlayezo</string>
+    <string name="imr_timestamp">12:00 PM</string>
+    <string name="imr_sender_name">Igama Lomthumeli</string>
+
+    <!-- Page: activity_group_adapter -->
+    <string name="aga_group_name">Igama Leqembu</string>
+
+    <!-- Page: activity_group_details -->
+    <string name="agd_group_details">Imininingwane Yeqembu</string>
+    <string name="agd_group_name">Igama Leqembu</string>
+    <string name="agd_members">Amalungu</string>
+    <string name="agd_add_member">Engeza Ilungu</string>
+    <string name="agd_leave_group">Shiya Iqembu</string>
+
+    <!-- Page: activity_register_page -->
+    <string name="arp_register">Bhalisela</string>
+    <string name="arp_first_name">Igama Lokuqala</string>
+    <string name="arp_last_name">Isibongo</string>
+    <string name="arp_email">I-imeyili</string>
+    <string name="arp_password">Iphasiwedi</string>
+    <string name="arp_confirm_password">Qinisekisa Iphasiwedi</string>
+    <string name="arp_register_button">Bhalisela</string>
+    <string name="arp_already_have_account">Usunayo i-akhawunti?</string>
+    <string name="arp_sign_in">Ngena ngemvume</string>
+
+    <!-- Page: fragment_event_details -->
+    <string name="fed_event_details">Imininingwane Yomcimbi</string>
+    <string name="fed_event_name">Igama Lomcimbi</string>
+    <string name="fed_time">Isikhathi:</string>
+    <string name="fed_location">Indawo:</string>
+    <string name="fed_description">Incazelo:</string>
+    <string name="fed_going">Ngiyahamba</string>
+    <string name="fed_not_going">Angihambisi</string>
+    <string name="fed_maybe">Mhlawumbe</string>
+
+    <!-- Page: fragment_group_details -->
+    <string name="fgd_group_details">Imininingwane Yeqembu</string>
+    <string name="fgd_group_name">Igama Leqembu</string>
+    <string name="fgd_members">Amalungu</string>
+    <string name="fgd_add_member">Engeza Ilungu</string>
+    <string name="fgd_leave_group">Shiya Iqembu</string>
+    <string name="fgd_no_members">Awukho amalungu okwamanje.</string>
+
+    <!-- Page: activity_received_links -->
+    <string name="arl_received_links">Izixhumanisi Ezitholiwe</string>
+
+    <!-- Page: fragment_group_chat_u_i -->
+    <string name="fgcui_type_message">Thayipha umlayezo...</string>
+
+    <!-- Page: item_ticketmaster_event -->
+    <string name="ite_event_name">Igama Lomcimbi</string>
+    <string name="ite_venue_name">Igama Lendawo</string>
+    <string name="ite_event_date">Usuku Lomcimbi</string>
+    <string name="ite_view_on_ticketmaster">Buka ku-Ticketmaster</string>
+
+    <!-- Page: activity_create_task_page -->
+    <string name="actp_create_task">Dala Umsebenzi</string>
+    <string name="actp_task_title">Isihloko Somsebenzi</string>
+    <string name="actp_task_description">Incazelo Yomsebenzi</string>
+    <string name="actp_assign_to">Yabela</string>
+    <string name="actp_due_date">Usuku Lokuphela</string>
+    <string name="actp_create_task_button">Dala Umsebenzi</string>
+
+    <!-- Page: activity_privacy_policy_page -->
+    <string name="appp_privacy_policy">Inqubomgomo Yobumfihlo</string>
+
+    <!-- Page: activity_reset_password_page -->
+    <string name="arpp_reset_password">Setha Kabusha Iphasiwedi</string>
+    <string name="arpp_new_password">Iphasiwedi Entsha</string>
+    <string name="arpp_confirm_new_password">Qinisekisa Iphasiwedi Entsha</string>
+    <string name="arpp_reset_button">Setha Kabusha</string>
+
+    <!-- Page: activity_forgot_password_page -->
+    <string name="afpp_forgot_password">Ukhohlwe Iphasiwedi</string>
+    <string name="afpp_email">I-imeyili</string>
+    <string name="afpp_send_reset_link">Thumela Isixhumanisi Sokusetha Kabusha</string>
+
+    <!-- Page: activity_horizontal_coordinator -->
+    <string name="ahc_home">Ikhaya</string>
+    <string name="ahc_events">Imicimbi</string>
+    <string name="ahc_groups">Amaqembu</string>
+    <string name="ahc_friends">Abangani</string>
+    <string name="ahc_account">I-akhawunti</string>
+
+    <!-- File: LoginPage.kt -->
+    <string name="lp9_authentication_error">Iphutha lokuqinisekisa: %1$s</string>
+    <string name="lp9_user_chose_password_login">Umsebenzisi ukhethe ukungenisa ngephasiwedi</string>
+    <string name="lp9_authentication_succeeded">Ukuqinisekisa kuphumelele</string>
+    <string name="lp9_authentication_failed">Ukuqinisekisa kuhlulekile</string>
+    <string name="lp9_biometric_login_title">Ukungenisa Ngezimpawu Zomzimba</string>
+    <string name="lp9_biometric_login_subtitle">Ngena usebenzisa izigxivizo zakho noma ubuso</string>
+    <string name="lp9_use_password">Sebenzisa Iphasiwedi</string>
+    <string name="lp9_biometric_auth_not_available">Ukuqinisekisa ngezimpawu zomzimba akutholakali</string>
+    <string name="lp9_welcome_back">Siyakwemukela emuva, %1$s!</string>
+    <string name="lp9_user_account_not_found">I-akhawunti yomsebenzisi ayitholakalanga</string>
+    <string name="lp9_no_saved_login">Akukho ukungena okugciniwe okutholiwe</string>
+    <string name="lp9_user_not_found_incorrect_credentials">Umsebenzisi akatholakali: Imininingwane yokungena engalungile</string>
+    <string name="lp9_google_sign_in_failed">Ukungena nge-Google kuhlulekile</string>
+
+    <!-- File: LoginViewModel.kt -->
+    <string name="lvm9_email_is_required">I-imeyili iyadingeka</string>
+    <string name="lvm9_password_is_required">Iphasiwedi iyadingeka</string>
+    <string name="lvm9_user_id_not_found">I-ID yomsebenzisi ayitholakalanga</string>
+    <string name="lvm9_login_failed">Ukungena kuhlulekile: %1$s</string>
+    <string name="lvm9_account_not_found">I-akhawunti ayitholakalanga. Sicela ubhalisele kuqala.</string>
+    <string name="lvm9_database_error">Iphutha ledatha: %1$s</string>
+    <string name="lvm9_invalid_email_or_password">I-imeyili noma iphasiwedi engavumelekile</string>
+    <string name="lvm9_failed_to_retrieve_google_user_details">Kwehlulekile ukuthola imininingwane yomsebenzisi we-Google.</string>
+    <string name="lvm9_unknown_google_sign_in_error">Iphutha elingaziwa lokuNgena nge-Google</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_registration_successful">Ukubhalisa kuphumelele</string>
+    <string name="rp9_registration_failed">Ukubhalisa kuhlulekile: %1$s</string>
+    <string name="rp9_passwords_do_not_match">Amaphasiwedi awafani</string>
+    <string name="rp9_invalid_email">I-imeyili engavumelekile</string>
+    <string name="rp9_password_too_short">Iphasiwedi kufanele ibe okungenani izinhlamvu ezi-6</string>
+
+    <!-- File: ToDoPage.kt -->
+    <string name="tdp9_delete_task_title">Susa Umsebenzi</string>
+    <string name="tdp9_delete_task_message">Uqinisekile ukuthi ufuna ukususa lo msebenzi?</string>
+    <string name="tdp9_yes">Yebo</string>
+    <string name="tdp9_no">Cha</string>
+    <string name="tdp9_task_marked_as_done">Umsebenzi uphawulwe njengoqediwe</string>
+    <string name="tdp9_task_marked_as_not_done">Umsebenzi uphawulwe njengongaqedwanga</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_please_fill_all_fields">Sicela ugcwalise wonke amasimu</string>
+    <string name="ctp9_task_created_successfully">Umsebenzi udalwe ngempumelelo</string>
+    <string name="ctp9_failed_to_create_task">Kwehlulekile ukudala umsebenzi</string>
+
+    <!-- File: GroupChatActivity.kt -->
+    <string name="gca9_message_cant_be_empty">Umlayezo awukwazi ukuba mponjana</string>
+    <string name="gca9_failed_to_send_message">Kwehlulekile ukuthumela umlayezo</string>
+    <string name="gca9_leave_group_title">Shiya Iqembu</string>
+    <string name="gca9_leave_group_message">Uqinisekile ukuthi ufuna ukushiya leli qembu?</string>
+    <string name="gca9_you_have_left_the_group">Usushiye iqembu.</string>
+    <string name="gca9_failed_to_leave_group">Kwehlulekile ukushiya iqembu.</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_delete_group_title">Susa Iqembu</string>
+    <string name="gp9_delete_group_message">Uqinisekile ukuthi ufuna ukususa leli qembu?</string>
+    <string name="gp9_group_deleted_successfully">Iqembu lisusiwe ngempumelelo</string>
+    <string name="gp9_failed_to_delete_group">Kwehlulekile ukususa iqembu</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_please_fill_all_fields">Sicela ugcwalise wonke amasimu</string>
+    <string name="cg9_group_created_successfully">Iqembu lidalwe ngempumelelo</string>
+    <string name="cg9_failed_to_create_group">Kwehlulekile ukudala iqembu</string>
+
+    <!-- File: EventsPage.kt -->
+    <string name="ep9_failed_to_load_events">Kwehlulekile ukulayisha imicimbi</string>
+
+    <!-- File: CreateCustomEvent.kt -->
+    <string name="cce9_please_fill_all_fields">Sicela ugcwalise wonke amasimu</string>
+    <string name="cce9_event_created_successfully">Umcimbi udalwe ngempumelelo</string>
+    <string name="cce9_failed_to_create_event">Kwehlulekile ukudala umcimbi</string>
+    <string name="cce9_event_created_online">Umcimbi udalwe ngempumelelo!(ku-inthanethi)</string>
+    <string name="cce9_event_creation_initiated">Ukudala umcimbi kuqaliwe!</string>
+    <string name="cce9_event_created_offline">Umcimbi udalwe ngempumelelo!(ngaphandle kwe-inthanethi)</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_all_fields_required">Wonke amasimu ayadingeka</string>
+    <string name="rp9_account_created_local">I-akhawunti idalwe ngempumelelo (yasendaweni)</string>
+    <string name="rp9_account_created_remote">I-akhawunti idalwe ngempumelelo (ekude)</string>
+    <string name="rp9_firebase_error">Iphutha le-Firebase: %1$s</string>
+
+    <!-- File: GroupChatUI.kt -->
+    <string name="gca9_no_internet_connection">Ayikho uxhumano lwe-inthanethi</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_user_name_or_link_empty">Igama lomsebenzisi noma isixhumanisi simponjana.</string>
+    <string name="gp9_invalid_group_link_format">Ifomethi Yesixhumanisi/ID Yeqembu Engavumelekile.</string>
+    <string name="gp9_invalid_group_link_id_not_found">Ifomethi Yesixhumanisi/ID Yeqembu Engavumelekile (I-ID ayitholakalanga).</string>
+    <string name="gp9_group_not_found_in_list">Iqembu alitholakalanga kulesi sixhumanisi/ID ohlwini lwakho.</string>
+    <string name="gp9_processing_invite">Ukucubungula isimemo ku-%1$s...</string>
+    <string name="gp9_group_operation_successful">Umsebenzi weqembu uphumelele!</string>
+
+    <!-- File: ReceivedLinks.kt -->
+    <string name="rl9_error_user_id_missing">Iphutha: I-ID yomsebenzisi ayikho.</string>
+    <string name="rl9_no_invites_received">Azikho izimemo ezitholiwe.</string>
+    <string name="rl9_attempting_to_join">Kuzanywa ukujoyina i-%1$s...</string>
+    <string name="rl9_error_invalid_invite_link">Iphutha: Akukwazi ukujoyina iqembu. Isixhumanisi somemo esingavumelekile.</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_invite_link_copied">Isixhumanisi somemo sikopishelwe kubhodi lokunameka.</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_task_creation_failed_locally">Ukudala umsebenzi kuhlulekile! (esidingeni)</string>
+    <string name="ctp9_task_created_locally">Umsebenzi udalwe ngempumelelo! (esidingeni)</string>
+
+    <!-- File: SettingsPage.kt -->
+    <string name="sp9_sync_successful">Ukuvunyelanisa kuphumelele</string>
+    <string name="sp9_sync_failed">Ukuvunyelanisa kuhlulekile</string>
+    <string name="sp9_sync_events_tasks_failed">Vunyelanisa imicimbi kodwa Imisebenzi Ihlulekile</string>
+    <string name="sp9_sync_tasks_events_failed">Vunyelanisa imisebenzi kodwa Imicimbi Ihlulekile</string>
+
+    <!-- File: EventSwipe.kt -->
+    <string name="es9_you_disliked">Awukuthandile i-%1$s</string>
+    <string name="es9_you_liked">Uyithandile i-%1$s</string>
+
+    <!-- File: EventDetails.kt -->
+    <string name="ed9_event_added_to_groups">Umcimbi wengezelwe emaqembini</string>
+
+    <!-- File: GroupDetailsF.kt -->
+    <string name="gdf9_no_events_found">Ayikho imicimbi etholiwe</string>
+
+    <!-- File: HomePage.kt -->
+    <string name="hp9_event_added_successfully">Umcimbi wengezelwe ngempumelelo!</string>
+    <string name="hp9_event_added_online">Umcimbi wengezelwe ngempumelelo!(ku-inthanethi)</string>
+
+    <string name="lorem_ipsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+    volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+    dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+    litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+    diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+    ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.
+
+    Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+    egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+    neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+    molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+    bibendum, vel congue leo egestas.
+
+    Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+    amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+    molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+    interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+    lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+    in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+    est.
+
+    Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+    Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+    non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+    eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+    quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+    ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+    placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+    convallis.
+
+    Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+    malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+    gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+    libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+    sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+    libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+    vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+</string>
+    <string name="mpho_tickets">Mpho Aathikithi!</string>
+
+
+    <string name="add_event">Engeza Umcimbi</string>
+    <string name="charity_run">Umgibelo Wenzuzo</string>
+    <string name="birthday_party">Umgubho Wesikhathi Sokuzalwa</string>
+    <string name="upcoming_events">Imicimbi Eziklazayo</string>
+    <string name="_3_active">3 Esebenzayo</string>
+    <string name="party_plans">Izinhlelo Zomphakathi</string>
+    <string name="_5_unread">5 Engifundwanga</string>
+    <string name="family_group">Iqembu Lomndeni</string>
+    <string name="_10_messages">10 Imilayezo</string>
+    <string name="project_discussions">Ukuxoxwa Kweprojekthi</string>
+    <string name="recent_chats">Ukuxoxa Kwasimanje</string>
+    <string name="active_group_conversations">Izingxoxo Ezisebenzayo Zeqembu</string>
+    <string name="my_events">Imicimbi Yami</string>
+    <string name="check_out_your_events">Bheka imicimbi yakho</string>
+    <string name="open_friend_compass">Vula i-Friend Compass</string>
+    <string name="connect_with_your_communities">Xhumana namasosha lakho</string>
+    <string name="my_groups">Amagqubu Ami</string>
+    <string name="send_invite">Thumela Isimemo</string>
+    <string name="enter_link">Faka isixhumanisi</string>
+    <string name="view_invites">Buka Izimemo</string>
+    <string name="enter_user_name">Faka igama lomsebenzisi</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="change_language">Shintsha Ulimi</string>
+    <string name="notifications">Izaziso</string>
+    <string name="click_noise">Umsindo Wokuchofoza</string>
+    <string name="share_location">Yabelana Nendawo</string>
+    <string name="sync_database">Vumelanisa i-Database</string>
+    <string name="view_privacy_policy">Buka Umthetho Wobumfihlo</string>
+    <string name="save">Londoloza!</string>
+    <string name="create_task">Dala Umsebenzi</string>
+    <string name="item_name">Igama Lokho Okukodwa</string>
+    <string name="enter_item_name">Faka igama lokho okukodwa</string>
+    <string name="description">Incazelo</string>
+    <string name="enter_description">Faka incazelo</string>
+    <string name="duration_hours">Isikhathi (amahora)</string>
+    <string name="enter_duration_in_hours">Faka isikhathi ngamahora</string>
+    <string name="due_date">Usuku Oluphelele</string>
+    <string name="save_task">Londoloza Umsebenzi</string>
+    <string name="forgot_your_password_enter_your_email_to_receive_otp_pin">Ukhohlwe iphasiwedi? Faka i-imeyili yakho uthole i-OTP pin.</string>
+    <string name="group_details">Imininingwane Yeqembu</string>
+    <string name="group_name">Igama Leqembu</string>
+    <string name="description_of_the_group">Incazelo yeqembu</string>
+    <string name="members">Amalungu</string>
+    <string name="admin">Umlawuli</string>
+    <string name="group_activities">Imisebenzi Yeqembu</string>
+    <string name="messages">Imilayezo</string>
+    <string name="events_created">Imicimbi Edaliwe</string>
+    <string name="tasks_completed">Imisebenzi Eqediwe</string>
+    <string name="create_event1">Dala Umcimbi</string>
+    <string name="start_chat">Qala Ukuxoxa</string>
+    <string name="event_name">Igama Lomcimbi:</string>
+    <string name="event_description1">Incazelo yomcimbi:</string>
+    <string name="event_location">Indawo Yomcimbi:</string>
+    <string name="event_time">Isikhathi Somcimbi:</string>
+    <string name="active_group_conversations1">Izingxoxo Ezisebenzayo Zeqembu</string>
+    <string name="we_collect_only_what_s_necessary_to_make_planning_trips_with_friends_easy_and_safe_such_as_your_profile_info_trip_details_and_if_enabled_your_location_for_group_tracking_this_data_is_used_solely_for_features_like_coordinating_plans_sharing_updates_and_letting_friends_see_where_you_are_if_you_choose">Sithola kuphela okudingekile ukwenza ukuphuma nabangane kube lula nokuphepha, njengolwazi lwephrofayela, imininingwane yohambo, noma indawo yakho uma kunikwe amandla, ukuze iqembu libhekane nendawo. Le data isetshenziswa kuphela emisebenzini njengokuhlela izinhlelo, ukwabelana ngazivuseleli, nokuvumela abangane bokubona ukuthi uphi uma ukhetha.</string>
+    <string name="your_personal_information_and_location_are_never_shared_without_your_permission_all_data_is_encrypted_during_storage_and_transfer">Ulwazi lwakho lwangempela nendawo alwabelanwa ngaphandle kwemvume yakho. Wonke uhlaziyo kuphefumulwa ngesikhathi sokugcina nokudluliselwa.</string>
+    <string name="we_do_not_sell_or_rent_your_data_to_anyone_you_can_view_update_or_delete_your_information_at_any_time_through_the_app_s_settings">Asithengisi noma asikhiphe ngomuntu noma ubani idatha yakho. Ungayibona, ibuyekeze noma isuse imininingwane yakho noma yisiphi isikhathi kusukela kuzilungiselelo zohlelo lokusebenza.</string>
+    <string name="done">Qediwe</string>
+    <string name="invites">Izimemo</string>
+    <string name="connect_with_your_communities1">Xhumana namasosha lakho</string>
+    <string name="create_your_profile">Dala iphrofayela yakho</string>
+    <string name="date_of_birth">Usuku Lokuzalwa</string>
+    <string name="create_new_password">Dala Iphasiwedi Entsha</string>
+    <string name="to_do_list">Uhlu Lwezinto Ozodinge Ukwenza</string>
+    <string name="add_location">Engeza Indawo</string>
+    <string name="_12_january_1991">Januwari 12, 1991</string>
+    <string name="add_emergency_contacts">Engeza Oxhumana Nabo Kwezokuphepha</string>
+    <string name="save1">Londoloza</string>
+    <string name="quick_alerts">Izaziso Esheshayo</string>
+    <string name="your_safety_is_our_priority">Ukuphepha kwakhu kuyisihloko sethu</string>
+    <string name="system_status_active">Isimo Sesistimu: Esisebenzayo</string>
+    <string name="no_active_alerts_detected">Azikho izaziso ezisebenzayo ezitholakele</string>
+    <string name="quick_actions">Izinyathelo Esheshayo</string>
+    <string name="bathroom">Igumbi Lokugezela</string>
+    <string name="going_home">Ngiya Ekhaya</string>
+    <string name="help">Usizo</string>
+    <string name="need_assistance">Kudingeka Usizo</string>
+    <string name="medical_emergency">Kuphephuke Ezokwelapha</string>
+    <string name="security_need">Kudingeka Ukuphepha</string>
+    <string name="emergency_actions">Izinyathelo Zokuphepha</string>
+    <string name="cancel">Khansela</string>
+    <string name="send_alert">THUMELA ISAZISO</string>
+    <string name="recent_alerts">Izaziso Zakamuva</string>
+    <string name="notifications_from_your_group">Izaziso ezivela eqenjini lakho</string>
+    <string name="upload_image">Layisha Umfanekiso</string>
+    <string name="enter_group_name">Faka Igama Leqembu</string>
+    <string name="e_g_squad_goals">Isib., Squad Goals</string>
+    <string name="describe_your_group">Chaza iqembu lakho</string>
+    <string name="e_g_for_planning_weekend_hikes_and_trips">Isib., Ukuhlela ukunyuka ngezimpelasonto nokuhamba.</string>
+    <string name="invite_members">Mema Amalungu</string>
+    <string name="event_details">Imininingwane Yomcimbi</string>
+    <string name="weekly_meeting">Ukuhlangana Kweveki</string>
+    <string name="discussion_of_upcoming_project_milestones">Ukuxoxwa ngezimpawu ezizayo zephrojekthi.</string>
+    <string name="participants">Abathathi Nxenye</string>
+    <string name="hosted_by_mpho">Kuhlaliwe uMpho</string>
+    <string name="view_todo_list">Buka Uhlu Lwezinto Ozodinge Ukwenza</string>
+    <string name="add_task">Engeza Umsebenzi</string>
+    <string name="add_this_event_to_your_groups">Engeza lo mcimbi emagqubeni akho</string>
+    <string name="select_groups1">Khetha Amagqubu</string>
+    <string name="add_to_groups">Engeza Emagqubeni</string>
+    <string name="group_details1">Imininingwane Yeqembu</string>
+    <string name="group_name1">Igama Leqembu</string>
+    <string name="members1">Amalungu</string>
+    <string name="voting_results">Imiphumela Yovoti</string>
+    <string name="in_progress1">Sebenzayo</string>
+    <string name="completed">Qedile</string>
+    <string name="status">Isimo:</string>
+    <string name="time">Isikhathi:</string>
+    <string name="status1">Isimo :</string>
+    <string name="time1">Isikhathi:</string>
+
+
+
+</resources>
+
+

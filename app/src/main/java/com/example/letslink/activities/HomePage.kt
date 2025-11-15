@@ -162,12 +162,12 @@ class HomeFragment : Fragment() {
 
                     ) { isComplete, eventID ->
                         if (isComplete) {
-                            Toast.makeText(context, "Event Added successfully!", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, getString(R.string.hp9_event_added_successfully), Toast.LENGTH_SHORT).show()
                             //insert it locally now
                             viewLifecycleOwner.lifecycleScope.launch {
                                 try {
                                     eventDao.addEventLocally(event)
-                                    Toast.makeText(context, "Event Added successfully!(online)", Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(context, getString(R.string.hp9_event_added_online), Toast.LENGTH_SHORT).show()
                                 }catch (e: Exception){
                                     Log.d("TM-eventAdded-error",e.toString())
                                 }

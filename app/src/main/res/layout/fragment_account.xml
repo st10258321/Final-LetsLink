@@ -84,7 +84,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Location"
+                    android:text="@string/add_location"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:padding="15dp"
@@ -106,7 +106,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="12 January 1991"
+                    android:text="@string/_12_january_1991"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:padding="15dp"
@@ -119,7 +119,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add Emergency Contacts"
+                android:text="@string/add_emergency_contacts"
                 android:textSize="16sp"
                 android:textColor="@android:color/white"
                 android:padding="15dp"
@@ -133,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/orange_primary"
-                android:text="Save"
+                android:text="@string/save1"
                 android:textSize="20dp"
                 android:textColor="@android:color/white"
                 android:drawableLeft="@drawable/ic_save"

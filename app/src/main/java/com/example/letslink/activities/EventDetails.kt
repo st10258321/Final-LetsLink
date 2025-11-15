@@ -112,7 +112,7 @@ class EventDetails : Fragment() {
         btnAddToGroups.setOnClickListener {
             val dbRef = FirebaseDatabase.getInstance().getReference("events")
             dbRef.child(eventId!!).child("groups").setValue(selectedGroupIds).addOnSuccessListener {
-                Toast.makeText(requireContext(), "Event added to groups", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.ed9_event_added_to_groups), Toast.LENGTH_SHORT).show()
                 tvSelectedGroups.setText("Select Groups")
             }.addOnFailureListener {
                 Toast.makeText(

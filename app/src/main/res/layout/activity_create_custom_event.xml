@@ -14,7 +14,6 @@
         android:orientation="vertical"
         android:paddingBottom="110dp"> <!-- Padding so navbar doesnt cover anything -->
 
-
         <!-- Top Bar -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,24 +28,25 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_arow_back"
-                android:contentDescription="Back"
+                android:contentDescription="@string/back"
                 app:tint="@color/orange_primary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create Event"
+                android:text="@string/create_event"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginStart="12dp"
                 android:fontFamily="sans-serif-medium" />
         </LinearLayout>
+
         <!-- Event Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Title"
+            android:text="@string/event_title"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:hint="Enter Event Title"
+            android:hint="@string/enter_event_title"
             android:inputType="text"
             android:padding="10dp"
             android:textColor="@android:color/white"
@@ -68,7 +68,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E.g., Braai"
+            android:text="@string/example_braai"
             android:textSize="12sp"
             android:textColor="#9E9E9E"
             android:layout_marginBottom="16dp" />
@@ -77,7 +77,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Description"
+            android:text="@string/event_description"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -87,7 +87,7 @@
             android:id="@+id/etEventDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Describe your description"
+            android:hint="@string/describe_your_description"
             android:textColor="@android:color/white"
             android:textColorHint="@color/white"
             android:backgroundTint="@color/orange_primary"
@@ -100,7 +100,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E.g Fun time in the backyard with friends"
+            android:text="@string/example_fun_time"
             android:textSize="12sp"
             android:textColor="@color/white"
             android:layout_marginBottom="16dp" />
@@ -109,7 +109,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Location"
+            android:text="@string/location"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:hint="Enter Location"
+            android:hint="@string/enter_location"
             android:inputType="text"
             android:padding="10dp"
             android:textColor="@android:color/white"
@@ -131,7 +131,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E.g Zacks House"
+            android:text="@string/example_zacks_house"
             android:textSize="12sp"
             android:textColor="#9E9E9E"
             android:layout_marginBottom="16dp" />
@@ -140,7 +140,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Start Time"
+            android:text="@string/start_time"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:hint="Enter Time"
+            android:hint="@string/enter_time"
             android:inputType="time"
             android:padding="10dp"
             android:textColor="@android:color/white"
@@ -162,7 +162,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter Start Time of event"
+            android:text="@string/enter_start_time_of_event"
             android:textSize="12sp"
             android:textColor="#9E9E9E"
             android:layout_marginBottom="16dp" />
@@ -171,7 +171,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="End Time"
+            android:text="@string/end_time"
             android:textSize="14sp"
             android:textColor="@color/orange_primary"
             android:textStyle="bold"
@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/orange_primary"
-            android:hint="Enter Time"
+            android:hint="@string/enter_time"
             android:inputType="time"
             android:padding="10dp"
             android:textColor="@android:color/white"
@@ -193,7 +193,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter End Time of event"
+            android:text="@string/enter_end_time_of_event"
             android:textSize="12sp"
             android:textColor="#9E9E9E"
             android:layout_marginBottom="16dp" />
@@ -204,7 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/orange_primary"
-            android:text="Select Date"/>
+            android:text="@string/select_date"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -221,9 +221,8 @@
                 android:datePickerMode="spinner"
                 style="@style/MySpinnerDatePicker"
                 android:background="@android:color/transparent" />
-
-
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -235,7 +234,7 @@
                 android:id="@+id/tvSelectedGroups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select Groups"
+                android:text="@string/select_groups"
                 android:padding="12dp"
                 android:textSize="14sp"
                 android:textColor="@color/white"
@@ -244,15 +243,13 @@
                 />
         </androidx.cardview.widget.CardView>
 
-
         <!-- Create Event Button -->
         <Button
             android:id="@+id/btnCreateEvent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/orange_primary"
-            android:text="Create Event"/>
+            android:text="@string/create_event"/>
 
     </LinearLayout>
 </ScrollView>
-

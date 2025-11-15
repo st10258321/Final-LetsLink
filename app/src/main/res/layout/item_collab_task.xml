@@ -75,7 +75,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Status: "
+                android:text="@string/status"
                 android:textSize="14sp"
                 android:textColor="@color/white"
                 android:alpha="0.8" />
@@ -101,7 +101,7 @@
                 android:id="@+id/task_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time:"
+                android:text="@string/time"
                 android:textSize="14sp"
                 android:textColor="@color/white"
                 android:alpha="0.8" />
@@ -123,14 +123,14 @@
 
             <Button
                 android:id="@+id/btn_In_progress"
-                android:text="In-Progress"
+                android:text="@string/in_progress1"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/midnight"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/btn_complete"
-                android:text="Completed"
+                android:text="@string/completed"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/black"
                 android:layout_width="150dp"

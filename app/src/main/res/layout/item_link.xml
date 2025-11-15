@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="Groups Chat"
+                android:text="@string/il_groups_chat"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/green"
-            android:text="join"
+            android:text="@string/il_join"
             android:textColorLink="@color/grey" />
 
     </LinearLayout>

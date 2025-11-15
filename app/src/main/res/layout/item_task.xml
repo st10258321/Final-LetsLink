@@ -68,7 +68,7 @@
                     android:id="@+id/task_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Status :"
+                    android:text="@string/status1"
                     android:textSize="14sp"
                     android:textColor="@color/white"
                     android:alpha="0.8" />
@@ -93,7 +93,7 @@
                     android:id="@+id/task_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Time:"
+                    android:text="@string/time1"
                     android:textSize="14sp"
                     android:textColor="@color/white"
                     android:alpha="0.8" />

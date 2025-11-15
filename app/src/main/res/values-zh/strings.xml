@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lang_english">英语</string>
+    <string name="lang_zulu">祖鲁语</string>
+    <string name="lang_afrikaans">南非荷兰语</string>
+    <string name="lang_shona">绍纳语</string>
+    <string name="lang_chinese">中文</string>
+
+    <string name="settings_title">设置</string>
+    <string name="notifications_label">通知</string>
+    <string name="click_noise_label">点击声音</string>
+    <string name="share_location_label">分享位置</string>
+    <string name="sync_database_label">同步数据库</string>
+    <string name="view_privacy_policy_label">查看隐私政策</string>
+    <string name="save_button">保存!</string>
+    <string name="language_changed">语言已成功更改</string>
+
+
+
+    <!-- Page: activity_login_page -->
+
+    <string name="app_name">LetsLink</string>
+    <string name="title_activity_event_voting">活动投票</string>
+    <string name="title_activity_event_voting_page">活动投票页面</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">第一个片段</string>
+    <string name="second_fragment_label">第二个片段</string>
+    <string name="next">下一个</string>
+    <string name="previous">上一个</string>
+    <string name="create_event">创建活动</string>
+    <string name="back">返回</string>
+    <string name="event_title">活动标题</string>
+    <string name="enter_event_title">输入活动标题</string>
+    <string name="example_braai">例如烧烤</string>
+    <string name="event_description">活动描述</string>
+    <string name="describe_your_description">描述您的说明</string>
+    <string name="example_fun_time">例如与朋友在后院度过的快乐时光</string>
+    <string name="location">位置</string>
+    <string name="enter_location">输入位置</string>
+    <string name="example_zacks_house">例如扎克的家</string>
+    <string name="start_time">开始时间</string>
+    <string name="enter_time">输入时间</string>
+    <string name="enter_start_time_of_event">输入活动开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="enter_end_time_of_event">输入活动结束时间</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_groups">选择群组</string>
+
+
+    <!-- Page: activity_login_page -->
+    <string name="alp_login">登录</string>
+    <string name="alp_email">电子邮件</string>
+    <string name="alp_password">密码</string>
+    <string name="alp_remember_me">记住我</string>
+    <string name="alp_forgot_password">忘记密码?</string>
+    <string name="alp_sign_in">登录</string>
+    <string name="alp_login_via_biometrics">通过生物识别登录</string>
+    <string name="alp_dont_have_an_account">没有账户?</string>
+    <string name="alp_sign_up">注册</string>
+
+    <!-- Page: item_link -->
+    <string name="il_groups_chat">群组聊天</string>
+    <string name="il_group_placeholder">群组占位符。</string>
+    <string name="il_invite_link">http://10.0.2.2:3000/invite/a923-34...</string>
+    <string name="il_join">加入</string>
+
+    <!-- Page: item_task -->
+    <string name="it_task_placeholder">任务占位符</string>
+    <string name="it_mark_as_done">标记为完成</string>
+
+    <!-- Page: activity_main -->
+    <string name="am_welcome">欢迎使用LetsLink</string>
+
+    <!-- Page: fragment_first -->
+    <string name="ff_hello_first_fragment">你好第一个片段</string>
+    <string name="ff_next">下一个</string>
+
+    <!-- Page: fragment_events -->
+    <string name="fe_no_events">没有活动</string>
+    <string name="fe_create_event">创建活动</string>
+
+    <!-- Page: fragment_groups -->
+    <string name="fg_no_groups">没有群组</string>
+    <string name="fg_create_group">创建群组</string>
+
+    <!-- Page: fragment_second -->
+    <string name="fs_hello_second_fragment">你好第二个片段。参数: %1$s</string>
+    <string name="fs_previous">上一个</string>
+
+    <!-- Page: item_group_card -->
+    <string name="igc_group_name">群组名称</string>
+    <string name="igc_group_description">群组描述</string>
+
+    <!-- Page: activity_compass -->
+    <string name="ac_compass">指南针</string>
+
+    <!-- Page: fragment_account -->
+    <string name="fa_account">账户</string>
+    <string name="fa_my_account">我的账户</string>
+    <string name="fa_account_info">账户信息</string>
+    <string name="fa_to_do">待办事项</string>
+    <string name="fa_settings">设置</string>
+    <string name="fa_user_safety">用户安全</string>
+    <string name="fa_logout">退出登录</string>
+
+    <!-- Page: item_collab_task -->
+    <string name="ict_task_name">任务名称</string>
+    <string name="ict_assigned_to">分配给: 用户</string>
+    <string name="ict_completed">已完成</string>
+
+    <!-- Page: item_events_card -->
+    <string name="iec_event_title">活动标题</string>
+    <string name="iec_event_time">活动时间</string>
+    <string name="iec_event_location">活动地点</string>
+
+    <!-- Page: content_home_page -->
+    <string name="chp_hello_blank_fragment">你好空白片段</string>
+
+    <!-- Page: fragment_settings -->
+    <string name="fs_settings">设置</string>
+    <string name="fs_edit_profile">编辑个人资料</string>
+    <string name="fs_notifications">通知</string>
+    <string name="fs_privacy">隐私</string>
+    <string name="fs_security">安全</string>
+    <string name="fs_help_and_support">帮助与支持</string>
+    <string name="fs_about">关于</string>
+
+    <!-- Page: item_message_sent -->
+    <string name="ims_message">消息</string>
+    <string name="ims_timestamp">12:00 PM</string>
+
+    <!-- Page: activity_home_page -->
+    <string name="ahp_home">主页</string>
+
+    <!-- Page: activity_temp_menu -->
+    <string name="atm_main_menu">主菜单</string>
+    <string name="atm_login">登录</string>
+    <string name="atm_register">注册</string>
+    <string name="atm_home">主页</string>
+    <string name="atm_to_do">待办事项</string>
+    <string name="atm_account">账户</string>
+    <string name="atm_settings">设置</string>
+    <string name="atm_create_event">创建活动</string>
+    <string name="atm_create_task">创建任务</string>
+    <string name="atm_user_safety">用户安全</string>
+    <string name="atm_events_page">活动页面</string>
+    <string name="atm_groups_page">群组页面</string>
+
+    <!-- Page: item_voting_result -->
+    <string name="ivr_option">选项</string>
+    <string name="ivr_votes">0票</string>
+
+    <!-- Page: activity_to_do_page -->
+    <string name="atdp_my_tasks">我的任务</string>
+
+    <!-- Page: fragment_friend_map -->
+    <string name="ffm_friend_map">朋友地图</string>
+
+    <!-- Page: activity_group_event -->
+    <string name="age_group_event">群组活动</string>
+    <string name="age_event_name">活动名称</string>
+    <string name="age_create_event">创建活动</string>
+    <string name="age_add_task">添加任务</string>
+
+    <!-- Page: activity_user_safety -->
+    <string name="aus_user_safety">用户安全</string>
+    <string name="aus_safety_tips">安全提示</string>
+    <string name="aus_report_user">举报用户</string>
+    <string name="aus_block_user">屏蔽用户</string>
+    <string name="aus_emergency_contacts">紧急联系人</string>
+    <string name="aus_share_live_location">分享实时位置</string>
+
+    <!-- Page: fragment_create_group -->
+    <string name="fcg_create_group">创建群组</string>
+    <string name="fcg_group_name">群组名称</string>
+    <string name="fcg_group_description">群组描述</string>
+    <string name="fcg_create">创建</string>
+
+    <!-- Page: item_message_received -->
+    <string name="imr_message">消息</string>
+    <string name="imr_timestamp">12:00 PM</string>
+    <string name="imr_sender_name">发送者姓名</string>
+
+    <!-- Page: activity_group_adapter -->
+    <string name="aga_group_name">群组名称</string>
+
+    <!-- Page: activity_group_details -->
+    <string name="agd_group_details">群组详情</string>
+    <string name="agd_group_name">群组名称</string>
+    <string name="agd_members">成员</string>
+    <string name="agd_add_member">添加成员</string>
+    <string name="agd_leave_group">离开群组</string>
+
+    <!-- Page: activity_register_page -->
+    <string name="arp_register">注册</string>
+    <string name="arp_first_name">名字</string>
+    <string name="arp_last_name">姓氏</string>
+    <string name="arp_email">电子邮件</string>
+    <string name="arp_password">密码</string>
+    <string name="arp_confirm_password">确认密码</string>
+    <string name="arp_register_button">注册</string>
+    <string name="arp_already_have_account">已有账户?</string>
+    <string name="arp_sign_in">登录</string>
+
+    <!-- Page: fragment_event_details -->
+    <string name="fed_event_details">活动详情</string>
+    <string name="fed_event_name">活动名称</string>
+    <string name="fed_time">时间:</string>
+    <string name="fed_location">地点:</string>
+    <string name="fed_description">描述:</string>
+    <string name="fed_going">参加</string>
+    <string name="fed_not_going">不参加</string>
+    <string name="fed_maybe">也许</string>
+
+    <!-- Page: fragment_group_details -->
+    <string name="fgd_group_details">群组详情</string>
+    <string name="fgd_group_name">群组名称</string>
+    <string name="fgd_members">成员</string>
+    <string name="fgd_add_member">添加成员</string>
+    <string name="fgd_leave_group">离开群组</string>
+    <string name="fgd_no_members">目前还没有成员。</string>
+
+    <!-- Page: activity_received_links -->
+    <string name="arl_received_links">收到的链接</string>
+
+    <!-- Page: fragment_group_chat_u_i -->
+    <string name="fgcui_type_message">输入消息...</string>
+
+    <!-- Page: item_ticketmaster_event -->
+    <string name="ite_event_name">活动名称</string>
+    <string name="ite_venue_name">场馆名称</string>
+    <string name="ite_event_date">活动日期</string>
+    <string name="ite_view_on_ticketmaster">在Ticketmaster上查看</string>
+
+    <!-- Page: activity_create_task_page -->
+    <string name="actp_create_task">创建任务</string>
+    <string name="actp_task_title">任务标题</string>
+    <string name="actp_task_description">任务描述</string>
+    <string name="actp_assign_to">分配给</string>
+    <string name="actp_due_date">截止日期</string>
+    <string name="actp_create_task_button">创建任务</string>
+
+    <!-- Page: activity_privacy_policy_page -->
+    <string name="appp_privacy_policy">隐私政策</string>
+
+    <!-- Page: activity_reset_password_page -->
+    <string name="arpp_reset_password">重置密码</string>
+    <string name="arpp_new_password">新密码</string>
+    <string name="arpp_confirm_new_password">确认新密码</string>
+    <string name="arpp_reset_button">重置</string>
+
+    <!-- Page: activity_forgot_password_page -->
+    <string name="afpp_forgot_password">忘记密码</string>
+    <string name="afpp_email">电子邮件</string>
+    <string name="afpp_send_reset_link">发送重置链接</string>
+
+    <!-- Page: activity_horizontal_coordinator -->
+    <string name="ahc_home">主页</string>
+    <string name="ahc_events">活动</string>
+    <string name="ahc_groups">群组</string>
+    <string name="ahc_friends">朋友</string>
+    <string name="ahc_account">账户</string>
+
+    <!-- File: LoginPage.kt -->
+    <string name="lp9_authentication_error">身份验证错误: %1$s</string>
+    <string name="lp9_user_chose_password_login">用户选择了密码登录</string>
+    <string name="lp9_authentication_succeeded">身份验证成功</string>
+    <string name="lp9_authentication_failed">身份验证失败</string>
+    <string name="lp9_biometric_login_title">生物识别登录</string>
+    <string name="lp9_biometric_login_subtitle">使用您的指纹或面部登录</string>
+    <string name="lp9_use_password">使用密码</string>
+    <string name="lp9_biometric_auth_not_available">生物识别身份验证不可用</string>
+    <string name="lp9_welcome_back">欢迎回来, %1$s!</string>
+    <string name="lp9_user_account_not_found">未找到用户账户</string>
+    <string name="lp9_no_saved_login">未找到已保存的登录</string>
+    <string name="lp9_user_not_found_incorrect_credentials">未找到用户: 凭据不正确</string>
+    <string name="lp9_google_sign_in_failed">谷歌登录失败</string>
+
+    <!-- File: LoginViewModel.kt -->
+    <string name="lvm9_email_is_required">电子邮件为必填项</string>
+    <string name="lvm9_password_is_required">密码为必填项</string>
+    <string name="lvm9_user_id_not_found">未找到用户ID</string>
+    <string name="lvm9_login_failed">登录失败: %1$s</string>
+    <string name="lvm9_account_not_found">未找到账户。请先注册。</string>
+    <string name="lvm9_database_error">数据库错误: %1$s</string>
+    <string name="lvm9_invalid_email_or_password">无效的电子邮件或密码</string>
+    <string name="lvm9_failed_to_retrieve_google_user_details">无法检索谷歌用户详细信息。</string>
+    <string name="lvm9_unknown_google_sign_in_error">未知的谷歌登录错误</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_registration_successful">注册成功</string>
+    <string name="rp9_registration_failed">注册失败: %1$s</string>
+    <string name="rp9_passwords_do_not_match">密码不匹配</string>
+    <string name="rp9_invalid_email">无效的电子邮件</string>
+    <string name="rp9_password_too_short">密码必须至少6个字符</string>
+
+    <!-- File: ToDoPage.kt -->
+    <string name="tdp9_delete_task_title">删除任务</string>
+    <string name="tdp9_delete_task_message">您确定要删除此任务吗?</string>
+    <string name="tdp9_yes">是</string>
+    <string name="tdp9_no">否</string>
+    <string name="tdp9_task_marked_as_done">任务已标记为完成</string>
+    <string name="tdp9_task_marked_as_not_done">任务已标记为未完成</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_please_fill_all_fields">请填写所有字段</string>
+    <string name="ctp9_task_created_successfully">任务创建成功</string>
+    <string name="ctp9_failed_to_create_task">创建任务失败</string>
+
+    <!-- File: GroupChatActivity.kt -->
+    <string name="gca9_message_cant_be_empty">消息不能为空</string>
+    <string name="gca9_failed_to_send_message">发送消息失败</string>
+    <string name="gca9_leave_group_title">离开群组</string>
+    <string name="gca9_leave_group_message">您确定要离开这个群组吗?</string>
+    <string name="gca9_you_have_left_the_group">您已离开群组。</string>
+    <string name="gca9_failed_to_leave_group">离开群组失败。</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_delete_group_title">删除群组</string>
+    <string name="gp9_delete_group_message">您确定要删除这个群组吗?</string>
+    <string name="gp9_group_deleted_successfully">群组删除成功</string>
+    <string name="gp9_failed_to_delete_group">删除群组失败</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_please_fill_all_fields">请填写所有字段</string>
+    <string name="cg9_group_created_successfully">群组创建成功</string>
+    <string name="cg9_failed_to_create_group">创建群组失败</string>
+
+    <!-- File: EventsPage.kt -->
+    <string name="ep9_failed_to_load_events">加载活动失败</string>
+
+    <!-- File: CreateCustomEvent.kt -->
+    <string name="cce9_please_fill_all_fields">请填写所有字段</string>
+    <string name="cce9_event_created_successfully">活动创建成功</string>
+    <string name="cce9_failed_to_create_event">创建活动失败</string>
+    <string name="cce9_event_created_online">活动创建成功!(在线)</string>
+    <string name="cce9_event_creation_initiated">活动创建已启动!</string>
+    <string name="cce9_event_created_offline">活动创建成功!(离线)</string>
+
+    <!-- File: RegisterPage.kt -->
+    <string name="rp9_all_fields_required">所有字段都是必填项</string>
+    <string name="rp9_account_created_local">账户创建成功 (本地)</string>
+    <string name="rp9_account_created_remote">账户创建成功 (远程)</string>
+    <string name="rp9_firebase_error">Firebase错误: %1$s</string>
+
+    <!-- File: GroupChatUI.kt -->
+    <string name="gca9_no_internet_connection">没有互联网连接</string>
+
+    <!-- File: GroupsPage.kt -->
+    <string name="gp9_user_name_or_link_empty">用户名或链接为空。</string>
+    <string name="gp9_invalid_group_link_format">无效的群组链接或ID格式。</string>
+    <string name="gp9_invalid_group_link_id_not_found">无效的群组链接或ID格式 (未找到ID)。</string>
+    <string name="gp9_group_not_found_in_list">在您的列表中未找到此链接或ID的群组。</string>
+    <string name="gp9_processing_invite">正在处理对%1$s的邀请...</string>
+    <string name="gp9_group_operation_successful">群组操作成功!</string>
+
+    <!-- File: ReceivedLinks.kt -->
+    <string name="rl9_error_user_id_missing">错误: 缺少用户ID。</string>
+    <string name="rl9_no_invites_received">未收到邀请。</string>
+    <string name="rl9_attempting_to_join">尝试加入%1$s...</string>
+    <string name="rl9_error_invalid_invite_link">错误: 无法加入群组。邀请链接无效。</string>
+
+    <!-- File: CreateGroup.kt -->
+    <string name="cg9_invite_link_copied">邀请链接已复制到剪贴板。</string>
+
+    <!-- File: CreateTaskPage.kt -->
+    <string name="ctp9_task_creation_failed_locally">任务创建失败! (本地)</string>
+    <string name="ctp9_task_created_locally">任务创建成功! (本地)</string>
+
+    <!-- File: SettingsPage.kt -->
+    <string name="sp9_sync_successful">同步成功</string>
+    <string name="sp9_sync_failed">同步失败</string>
+    <string name="sp9_sync_events_tasks_failed">同步活动但任务失败</string>
+    <string name="sp9_sync_tasks_events_failed">同步任务但活动失败</string>
+
+    <!-- File: EventSwipe.kt -->
+    <string name="es9_you_disliked">您不喜欢%1$s</string>
+    <string name="es9_you_liked">您喜欢%1$s</string>
+
+    <!-- File: EventDetails.kt -->
+    <string name="ed9_event_added_to_groups">活动已添加到群组</string>
+
+    <!-- File: GroupDetailsF.kt -->
+    <string name="gdf9_no_events_found">未找到活动</string>
+
+    <!-- File: HomePage.kt -->
+    <string name="hp9_event_added_successfully">活动添加成功!</string>
+    <string name="hp9_event_added_online">活动添加成功!(在线)</string>
+
+
+    <string name="lorem_ipsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+    volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+    dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+    litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+    diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+    ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.
+
+    Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+    egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+    neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+    molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+    bibendum, vel congue leo egestas.
+
+    Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+    amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+    molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+    interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+    lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+    in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+    est.
+
+    Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+    Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+    non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+    eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+    quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+    ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+    placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+    convallis.
+
+    Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+    malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+    gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+    libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+    sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+    libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+    vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+</string>
+    <string name="mpho_tickets">Mpho 门票!</string>
+
+        <string name="add_event">添加活动</string>
+        <string name="charity_run">慈善跑</string>
+        <string name="birthday_party">生日派对</string>
+        <string name="upcoming_events">即将举行的活动</string>
+        <string name="_3_active">3 个活跃</string>
+        <string name="party_plans">派对计划</string>
+        <string name="_5_unread">5 条未读</string>
+        <string name="family_group">家庭群组</string>
+        <string name="_10_messages">10 条消息</string>
+        <string name="project_discussions">项目讨论</string>
+        <string name="recent_chats">最近聊天</string>
+        <string name="active_group_conversations">活跃的群聊</string>
+        <string name="my_events">我的活动</string>
+        <string name="check_out_your_events">查看你的活动</string>
+        <string name="open_friend_compass">打开好友指南针</string>
+        <string name="connect_with_your_communities">与社区建立联系</string>
+        <string name="my_groups">我的群组</string>
+        <string name="send_invite">发送邀请</string>
+        <string name="enter_link">输入链接</string>
+        <string name="view_invites">查看邀请</string>
+        <string name="enter_user_name">输入用户名</string>
+        <string name="settings">设置</string>
+        <string name="change_language">更改语言</string>
+        <string name="notifications">通知</string>
+        <string name="click_noise">点击音效</string>
+        <string name="share_location">共享位置</string>
+        <string name="sync_database">同步数据库</string>
+        <string name="view_privacy_policy">查看隐私政策</string>
+        <string name="save">保存！</string>
+        <string name="create_task">创建任务</string>
+        <string name="item_name">项目名称</string>
+        <string name="enter_item_name">输入项目名称</string>
+        <string name="description">描述</string>
+        <string name="enter_description">输入描述</string>
+        <string name="duration_hours">持续时间（小时）</string>
+        <string name="enter_duration_in_hours">输入持续时间（小时）</string>
+        <string name="due_date">截止日期</string>
+        <string name="save_task">保存任务</string>
+        <string name="forgot_your_password_enter_your_email_to_receive_otp_pin">忘记密码？输入邮箱接收 OTP 验证码。</string>
+        <string name="group_details">群组详情</string>
+        <string name="group_name">群组名称</string>
+        <string name="description_of_the_group">群组描述</string>
+        <string name="members">成员</string>
+        <string name="admin">管理员</string>
+        <string name="group_activities">群组活动</string>
+        <string name="messages">消息</string>
+        <string name="events_created">已创建活动</string>
+        <string name="tasks_completed">已完成任务</string>
+        <string name="create_event1">创建活动</string>
+        <string name="start_chat">开始聊天</string>
+        <string name="event_name">活动名称：</string>
+        <string name="event_description1">活动描述：</string>
+        <string name="event_location">活动地点：</string>
+        <string name="event_time">活动时间：</string>
+        <string name="active_group_conversations1">活跃的群聊</string>
+        <string name="we_collect_only_what_s_necessary_to_make_planning_trips_with_friends_easy_and_safe_such_as_your_profile_info_trip_details_and_if_enabled_your_location_for_group_tracking_this_data_is_used_solely_for_features_like_coordinating_plans_sharing_updates_and_letting_friends_see_where_you_are_if_you_choose">我们仅收集让与朋友规划行程变得简单、安全所必需的信息，例如您的个人资料、行程详情，以及（若开启）用于群组追踪的位置。这些数据仅用于协调计划、分享更新、让好友看到您的位置（若您选择）。</string>
+        <string name="your_personal_information_and_location_are_never_shared_without_your_permission_all_data_is_encrypted_during_storage_and_transfer">未经您的许可，您的个人信息与位置绝不会被共享。所有数据在存储与传输期间均加密。</string>
+        <string name="we_do_not_sell_or_rent_your_data_to_anyone_you_can_view_update_or_delete_your_information_at_any_time_through_the_app_s_settings">我们不会将您的数据出售或出租给任何人。您可以随时在应用设置中查看、更新或删除您的信息。</string>
+        <string name="done">完成</string>
+        <string name="invites">邀请</string>
+        <string name="connect_with_your_communities1">与社区建立联系</string>
+        <string name="create_your_profile">创建个人资料</string>
+        <string name="date_of_birth">出生日期</string>
+        <string name="create_new_password">创建新密码</string>
+        <string name="to_do_list">待办清单</string>
+        <string name="add_location">添加位置</string>
+        <string name="_12_january_1991">1991年1月12日</string>
+        <string name="add_emergency_contacts">添加紧急联系人</string>
+        <string name="save1">保存</string>
+        <string name="quick_alerts">快速提醒</string>
+        <string name="your_safety_is_our_priority">您的安全是我们的首要任务</string>
+        <string name="system_status_active">系统状态：活跃</string>
+        <string name="no_active_alerts_detected">未检测到活跃提醒</string>
+        <string name="quick_actions">快捷操作</string>
+        <string name="bathroom">洗手间</string>
+        <string name="going_home">正在回家</string>
+        <string name="help">帮助</string>
+        <string name="need_assistance">需要帮助</string>
+        <string name="medical_emergency">医疗急救</string>
+        <string name="security_need">安全需求</string>
+        <string name="emergency_actions">紧急操作</string>
+        <string name="cancel">取消</string>
+        <string name="send_alert">发送提醒</string>
+        <string name="recent_alerts">最近提醒</string>
+        <string name="notifications_from_your_group">来自群组的通知</string>
+        <string name="upload_image">上传图片</string>
+        <string name="enter_group_name">输入群组名称</string>
+        <string name="e_g_squad_goals">例如：Squad Goals</string>
+        <string name="describe_your_group">描述你的群组</string>
+        <string name="e_g_for_planning_weekend_hikes_and_trips">例如：用于计划周末远足与旅行。</string>
+        <string name="invite_members">邀请成员</string>
+        <string name="event_details">活动详情</string>
+        <string name="weekly_meeting">每周例会</string>
+        <string name="discussion_of_upcoming_project_milestones">讨论即将到来的项目里程碑。</string>
+        <string name="participants">参与者</string>
+        <string name="hosted_by_mpho">由 Mpho 主持</string>
+        <string name="view_todo_list">查看待办清单</string>
+        <string name="add_task">添加任务</string>
+        <string name="add_this_event_to_your_groups">将此活动添加到您的群组</string>
+        <string name="select_groups1">选择群组</string>
+        <string name="add_to_groups">添加到群组</string>
+        <string name="group_details1">群组详情</string>
+        <string name="group_name1">群组名称</string>
+        <string name="members1">成员</string>
+        <string name="voting_results">投票结果</string>
+        <string name="in_progress1">进行中</string>
+        <string name="completed">已完成</string>
+        <string name="status">状态：</string>
+        <string name="time">时间：</string>
+        <string name="status1">状态：</string>
+        <string name="time1">时间：</string>
+
+
+
+</resources>

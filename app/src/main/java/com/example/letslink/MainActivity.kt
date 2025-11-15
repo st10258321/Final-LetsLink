@@ -1,8 +1,11 @@
 package com.example.letslink
 
 import android.animation.ValueAnimator
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -12,8 +15,31 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.letslink.activities.LoginPage
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
+    override fun attachBaseContext(newBase: Context) {
+        val prefs = newBase.getSharedPreferences("settings", Context.MODE_PRIVATE)
+        val lang = prefs.getString("app_language", "en") ?: "en"
+        val locale = Locale(lang)
+        val context = updateBaseContextLocale(newBase, locale)
+        super.attachBaseContext(context)
+    }
+
+    private fun updateBaseContextLocale(context: Context, locale: Locale): Context {
+        val config = Configuration(context.resources.configuration)
+        Locale.setDefault(locale)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            val localeList = android.os.LocaleList(locale)
+            android.os.LocaleList.setDefault(localeList)
+            config.setLocales(localeList)
+        } else {
+            config.setLocale(locale)
+        }
+        return context.createConfigurationContext(config)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "270663535251",
+    "firebase_url": "https://letslink-46e58-default-rtdb.firebaseio.com",
     "project_id": "letslink-46e58",
     "storage_bucket": "letslink-46e58.firebasestorage.app"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "270663535251-djq2scg5m9n999mnv9j7go89qjk6sha2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.letslink",
+            "certificate_hash": "6312ffd3ec84608762a2ebd5e4f0b077281841f2"
+          }
+        },
         {
           "client_id": "270663535251-g77p1rbctpukjvmm4oql4rbn823gib8k.apps.googleusercontent.com",
           "client_type": 1,

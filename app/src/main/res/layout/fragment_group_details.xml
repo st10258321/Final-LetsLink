@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="Group Details"/>
+                    android:text="@string/group_details1"/>
 
                 <LinearLayout
                     android:id="@+id/layout_group_actions"
@@ -107,7 +107,7 @@
                         android:textStyle="bold"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Group Name"/>
+                        android:text="@string/group_name1"/>
 
                     <TextView
                         android:id="@+id/txt_group_description"
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginBottom="1dp"
-                android:text="Members"
+                android:text="@string/members1"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -169,7 +169,7 @@
                         android:id="@+id/txt_member_role_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Admin"
+                        android:text="@string/admin"
                         android:textColor="@color/white"
                         android:textSize="12sp"/>
                 </LinearLayout>
@@ -243,7 +243,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Voting Results"/>
+                android:text="@string/voting_results"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:padding="0dp"

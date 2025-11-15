@@ -143,6 +143,8 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.google.signin)
     implementation(libs.firebase.messaging)
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
 
 //    // KotlinX IO (force-stable version)
 //    implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.5")

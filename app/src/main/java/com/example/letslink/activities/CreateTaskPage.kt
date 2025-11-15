@@ -90,7 +90,7 @@ class CreateTaskFragment : Fragment() {
                                 taskDao.addTaskLocally(task)
                             }
                         }catch (e: Exception){
-                            Toast.makeText(requireContext(), "Task creation failed! (locally)", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(requireContext(), getString(R.string.ctp9_task_creation_failed_locally), Toast.LENGTH_SHORT).show()
                         }
                         parentFragmentManager.popBackStack()
                     } else {
@@ -105,11 +105,11 @@ class CreateTaskFragment : Fragment() {
                     Log.d("sync-local-task",task.isSynced.toString())
                     lifecycleScope.launch {
                         taskDao.addTaskLocally(task)
-                        Toast.makeText(requireContext(), "Task created successfully! (locally)", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), getString(R.string.ctp9_task_created_locally), Toast.LENGTH_SHORT).show()
                         parentFragmentManager.popBackStack()
                     }
                 }catch(e:Exception){
-                    Toast.makeText(requireContext(), "Task creation failed! (locally)", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.ctp9_task_creation_failed_locally), Toast.LENGTH_SHORT).show()
                 }
             }
 

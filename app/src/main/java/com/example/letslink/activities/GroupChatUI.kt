@@ -96,7 +96,7 @@ class GroupChatActivity : AppCompatActivity() {
                     Log.d("check-members",members.size.toString())
                     try {
                         if (message.isEmpty()) {
-                            Toast.makeText(this, "Enter a message", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, getString(R.string.gca9_message_cant_be_empty), Toast.LENGTH_SHORT).show()
                             return@getGroupMembers
                         }
                         Log.d("check-message", message)
@@ -128,7 +128,7 @@ class GroupChatActivity : AppCompatActivity() {
 
 
             }else{
-                Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.gca9_no_internet_connection), Toast.LENGTH_SHORT).show()
                 //queue the messages in a database "offlineMessage" where it stores the groupID, userID who sent the message and the message itself.
             }
 

@@ -70,7 +70,7 @@ class ReceivedLinks : Fragment() {
         if (userId.isNotBlank()) {
             viewModel.fetchReceivedInvites(userId)
         } else {
-            Toast.makeText(requireContext(), "Error: User ID is missing.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.rl9_error_user_id_missing), Toast.LENGTH_SHORT).show()
         }
 
         //  Observe the list of Invites objects/ invites received
@@ -81,7 +81,7 @@ class ReceivedLinks : Fragment() {
 
             //  Show a message if the list is empty
             if (invitesList.isNullOrEmpty()) {
-                Toast.makeText(requireContext(), "No invites received.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.rl9_no_invites_received), Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -100,9 +100,9 @@ class ReceivedLinks : Fragment() {
                 if (groupId != null && currentUserId.toString().isNotBlank()) {
                     // function to join the group using the extracted groupId
                     viewModel.joinGroup(groupId, currentUserId)
-                    Toast.makeText(requireContext(), "Attempting to join ${invite.groupName}...", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.rl9_attempting_to_join, invite.groupName), Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(requireContext(), "Error: Cannot join group. Invalid invite link.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.rl9_error_invalid_invite_link), Toast.LENGTH_SHORT).show()
                 }
             }
         )

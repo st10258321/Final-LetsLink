@@ -279,7 +279,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="@color/orange"
-                android:text="Open Friend Compass"
+                android:text="@string/open_friend_compass"
                 android:textColor="@color/white" />
 
         </LinearLayout>

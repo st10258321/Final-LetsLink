@@ -94,7 +94,7 @@ class GroupDetailsF : Fragment() {
                     intent.putExtra("userId", userId)
                     startActivity(intent)
                 }else{
-                    Toast.makeText(requireContext(), "No events found", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.gdf9_no_events_found), Toast.LENGTH_SHORT).show()
                 }
 
             }

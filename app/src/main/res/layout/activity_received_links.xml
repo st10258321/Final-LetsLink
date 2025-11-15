@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Invites"
+            android:text="@string/invites"
             android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Connect with your communities"
+            android:text="@string/connect_with_your_communities1"
             android:textColor="@color/stone"
             android:textSize="16sp" />
 

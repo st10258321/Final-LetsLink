@@ -48,7 +48,7 @@
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
 					android:layout_weight="1"
-					android:text="Group Details"/>
+					android:text="@string/group_details"/>
 
 				<LinearLayout
 					android:id="@+id/layout_group_actions"
@@ -107,7 +107,7 @@
 						android:textStyle="bold"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
-						android:text="Group Name"/>
+						android:text="@string/group_name"/>
 
 					<TextView
 						android:id="@+id/txt_group_description"
@@ -115,7 +115,7 @@
 						android:textSize="12sp"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
-						android:text="Description of the group"/>
+						android:text="@string/description_of_the_group"/>
 				</LinearLayout>
 			</LinearLayout>
 
@@ -125,7 +125,7 @@
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="20dp"
 				android:layout_marginBottom="1dp"
-				android:text="Members"
+				android:text="@string/members"
 				android:textColor="@color/white"
 				android:textSize="18sp"
 				android:textStyle="bold" />
@@ -169,7 +169,7 @@
 						android:id="@+id/txt_member_role_1"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="Admin"
+						android:text="@string/admin"
 						android:textColor="@color/white"
 						android:textSize="12sp"/>
 				</LinearLayout>
@@ -243,7 +243,7 @@
 				android:layout_marginHorizontal="20dp"
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
-				android:text="Group Activities"/>
+				android:text="@string/group_activities"/>
 
 			<LinearLayout
 				android:id="@+id/layout_activities_row"
@@ -270,7 +270,7 @@
 						android:layout_marginStart="12dp"
 						android:layout_marginBottom="4dp"
 						android:textStyle="bold"
-						android:text="Messages"
+						android:text="@string/messages"
 						android:textColor="#F44A22"
 						android:textSize="14sp" />
 
@@ -303,7 +303,7 @@
 						android:layout_height="wrap_content"
 						android:layout_marginStart="12dp"
 						android:layout_marginBottom="4dp"
-						android:text="Events Created"
+						android:text="@string/events_created"
 						android:textColor="#F44A22"
 						android:textSize="14sp" />
 
@@ -347,7 +347,7 @@
 						android:layout_marginStart="12dp"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
-						android:text="Tasks Completed" />
+						android:text="@string/tasks_completed" />
 
 					<TextView
 						android:id="@+id/txt_tasks_count"
@@ -396,7 +396,7 @@
 						android:id="@+id/txt_create_event"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="Create Event"
+						android:text="@string/create_event1"
 						android:textColor="#F44A22"
 						android:textSize="16sp"
 						android:textStyle="bold" />
@@ -421,7 +421,7 @@
 						android:id="@+id/txt_start_chat"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="Start Chat"
+						android:text="@string/start_chat"
 						android:textColor="#000000"
 						android:textSize="16sp"
 						android:textStyle="bold" />

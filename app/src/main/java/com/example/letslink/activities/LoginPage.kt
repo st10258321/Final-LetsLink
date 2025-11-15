@@ -1,6 +1,9 @@
 package com.example.letslink.activities
 
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -33,6 +36,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.launch
+import java.util.*
 
 class LoginPage : AppCompatActivity() {
 
@@ -56,6 +60,27 @@ class LoginPage : AppCompatActivity() {
         private const val SAVED_EMAIL_KEY = "saved_email"
     }
 
+    override fun attachBaseContext(newBase: Context) {
+        val prefs = newBase.getSharedPreferences("settings", Context.MODE_PRIVATE)
+        val lang = prefs.getString("app_language", "en") ?: "en"
+        val locale = Locale(lang)
+        val context = updateBaseContextLocale(newBase, locale)
+        super.attachBaseContext(context)
+    }
+
+    private fun updateBaseContextLocale(context: Context, locale: Locale): Context {
+        val config = Configuration(context.resources.configuration)
+        Locale.setDefault(locale)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            val localeList = android.os.LocaleList(locale)
+            android.os.LocaleList.setDefault(localeList)
+            config.setLocales(localeList)
+        } else {
+            config.setLocale(locale)
+        }
+        return context.createConfigurationContext(config)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         sessionManager = SessionManager(this)
         super.onCreate(savedInstanceState)
@@ -75,7 +100,7 @@ class LoginPage : AppCompatActivity() {
         }
 
         val dao: UserDao = LetsLinkDB.getDatabase(applicationContext).userDao()
-        val factory = ViewModelFactory(dao,sessionManager)
+        val factory = ViewModelFactory(dao,sessionManager,this)
         loginViewModel = ViewModelProvider(this, factory)[LoginViewModel::class.java]
         userViewModel = ViewModelProvider(this, factory)[UserViewModel::class.java]
 
@@ -161,10 +186,10 @@ class LoginPage : AppCompatActivity() {
                     when (errorCode) {
                         BiometricPrompt.ERROR_USER_CANCELED,
                         BiometricPrompt.ERROR_NEGATIVE_BUTTON -> {
-                            Log.d("Biometric", "User chose password login")
+                            Log.d("Biometric", getString(R.string.lp9_user_chose_password_login))
                         }
                         else -> {
-                            Toast.makeText(this@LoginPage, "Authentication error: $errString", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@LoginPage, getString(R.string.lp9_authentication_error, errString), Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -176,14 +201,14 @@ class LoginPage : AppCompatActivity() {
 
                 override fun onAuthenticationFailed() {
                     super.onAuthenticationFailed()
-                    Toast.makeText(this@LoginPage, "Authentication failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginPage, getString(R.string.lp9_authentication_failed), Toast.LENGTH_SHORT).show()
                 }
             })
 
         promptInfo = BiometricPrompt.PromptInfo.Builder()
-            .setTitle("Biometric Login")
-            .setSubtitle("Log in using your fingerprint or face")
-            .setNegativeButtonText("Use Password")
+            .setTitle(getString(R.string.lp9_biometric_login_title))
+            .setSubtitle(getString(R.string.lp9_biometric_login_subtitle))
+            .setNegativeButtonText(getString(R.string.lp9_use_password))
             .setAllowedAuthenticators(BiometricManager.Authenticators.BIOMETRIC_STRONG or BiometricManager.Authenticators.BIOMETRIC_WEAK)
             .build()
     }
@@ -207,7 +232,7 @@ class LoginPage : AppCompatActivity() {
         try {
             biometricPrompt.authenticate(promptInfo)
         } catch (e: Exception) {
-            Toast.makeText(this, "Biometric authentication not available", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.lp9_biometric_auth_not_available), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -220,17 +245,17 @@ class LoginPage : AppCompatActivity() {
                 val user = userViewModel.getUserByEmail(savedEmail)
                 if (user != null) {
                     sessionManager.saveUserSession(user.userId, user.email, user.firstName)
-                    Toast.makeText(this@LoginPage, "Welcome back, ${user.firstName}!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginPage, getString(R.string.lp9_welcome_back, user.firstName), Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@LoginPage, HorizontalCoordinator::class.java)
                     startActivity(intent)
                     finish()
                 } else {
-                    Toast.makeText(this@LoginPage, "User account not found", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginPage, getString(R.string.lp9_user_account_not_found), Toast.LENGTH_SHORT).show()
                     biometricLoginButton.visibility = View.GONE
                 }
             }
         } else {
-            Toast.makeText(this@LoginPage, "No saved login found", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@LoginPage, getString(R.string.lp9_no_saved_login), Toast.LENGTH_SHORT).show()
             biometricLoginButton.visibility = View.GONE
         }
     }
@@ -266,7 +291,7 @@ class LoginPage : AppCompatActivity() {
         val shake = AnimationUtils.loadAnimation(this, R.anim.shake)
         emailEditText.startAnimation(shake)
         passwordEditText.startAnimation(shake)
-        Toast.makeText(this, "User not found: Incorrect credentials", Toast.LENGTH_SHORT)
+        Toast.makeText(this, getString(R.string.lp9_user_not_found_incorrect_credentials), Toast.LENGTH_SHORT)
             .show()
     }
 
@@ -278,7 +303,7 @@ class LoginPage : AppCompatActivity() {
                 val account = task.getResult(Exception::class.java)
                 loginViewModel.onEvent(LoginEvent.GoogleLogin(account.idToken!!))
             } catch (e: Exception) {
-                loginViewModel.onEvent(LoginEvent.LoginFailed("Google sign in failed"))
+                loginViewModel.onEvent(LoginEvent.LoginFailed(getString(R.string.lp9_google_sign_in_failed)))
             }
         }
     }

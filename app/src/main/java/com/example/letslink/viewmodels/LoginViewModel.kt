@@ -1,14 +1,14 @@
 package com.example.letslink.viewmodels
 
+import android.content.Context
 import android.util.Log
 import android.util.Patterns
-import android.widget.Toast
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.example.letslink.local_database.UserDao
 import com.example.letslink.API_related.UUIDConverter
+import com.example.letslink.R
 import com.example.letslink.SessionManager
 import com.example.letslink.model.LoginEvent
 import com.example.letslink.model.LoginState
@@ -24,8 +24,8 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.security.MessageDigest
 import com.google.firebase.database.FirebaseDatabase
-//Acts as a bridge to allow whatever is inputted in the ui to be written to room (Lackner, 2025b)
-class LoginViewModel(private val dao: UserDao, private val sessionManager: SessionManager) : ViewModel() {
+
+class LoginViewModel(private val dao: UserDao, private val sessionManager: SessionManager, private val context: Context) : ViewModel() {
     private val firebaseAuth = FirebaseAuth.getInstance()
     private val database = FirebaseDatabase.getInstance().reference
     private lateinit var uuidConverter : UUIDConverter
@@ -63,68 +63,74 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
             is LoginEvent.LoginFailed -> _loginState.update{it.copy(errorMessage = event.message)}
         }
     }
-    private fun siginInWithGoogle(idToken:String){
-        _loginState.update{it.copy(isLoading = true, errorMessage = null)}
-        uuidConverter = UUIDConverter()
+    private fun siginInWithGoogle(idToken: String) {
+        _loginState.update { it.copy(isLoading = true, errorMessage = null) }
         val credential = GoogleAuthProvider.getCredential(idToken, null)
 
-        viewModelScope.launch{
-            try {
-                firebaseAuth.signInWithCredential(credential)
-                    .addOnCompleteListener { task ->
-                        if (task.isSuccessful) {
-                            Log.d("google-check", task.result.user?.displayName!!)
+        firebaseAuth.signInWithCredential(credential)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val firebaseUser = task.result.user
+                    if (firebaseUser?.email != null && firebaseUser.displayName != null) {
+                        val userId = firebaseUser.uid
+                        val email = firebaseUser.email!!
+                        val name = firebaseUser.displayName!!
+
+                        val newUser = User(
+                            userId = userId,
+                            firstName = name,
+                            email = email,
+                            password = "" // No password for Google users
+                        )
+
+                        viewModelScope.launch {
+                            syncUserToLocalDatabase(newUser)
+                            sessionManager.saveUserSession(userId = userId, email = email, name = name)
+
                             _loginState.update {
                                 it.copy(
-                                    email = task.result.user?.email!!,
+                                    userId = userId,
+                                    name = name,
+                                    email = email,
                                     isLoading = false,
                                     isSuccess = true,
                                     errorMessage = null
                                 )
                             }
-                            val id = task.result.user?.uid
-                            val name = task.result.user?.displayName
-                            val email = task.result.user?.email
-
-                            if (name != null && email != null) {
-                                _loggedInUser?.userId = id!!
-                                _loggedInUser?.firstName = name
-                                _loggedInUser?.email = email
-
-                                sessionManager.saveUserSession(userId = id.toString(),email,name)
-
-                            }
-
-                        } else {
-                            _loginState.update {
-                                it.copy(
-                                    isLoading = false,
-                                    errorMessage = task.exception?.message
-                                )
-                            }
-                            Log.d("google-check-failed","Failed")
+                            Log.d("LoginViewModel", "Google Sign-In successful and user synced.")
                         }
+                    } else {
+                        _loginState.update {
+                            it.copy(
+                                isLoading = false,
+                                errorMessage = context.getString(R.string.lvm9_failed_to_retrieve_google_user_details)
+                            )
+                        }
+                        Log.d("LoginViewModel", "Google sign in successful, but user details are missing.")
                     }
-
-            } catch (e:Exception){
-                _loginState.update { it.copy(isLoading = false, isSuccess = false, errorMessage = e.message) }
-                Log.d("LoginViewModel", "Google login failed with exception: ${e.message}")
+                } else {
+                    _loginState.update {
+                        it.copy(
+                            isLoading = false,
+                            errorMessage = task.exception?.message ?: context.getString(R.string.lvm9_unknown_google_sign_in_error)
+                        )
+                    }
+                    Log.d("LoginViewModel", "Google sign in failed with exception: ${task.exception?.message}")
+                }
             }
-
-        }
     }
     private fun attemptLogin() {
         val state = loginState.value
         Log.d("LoginViewModel", "Attempting login for user: ${state.email}")
 
         if (state.email.isBlank()) {
-            _loginState.update { it.copy(errorMessage = "Email is required") }
+            _loginState.update { it.copy(errorMessage = context.getString(R.string.lvm9_email_is_required)) }
             Log.d("LoginViewModel", "Email is blank.")
             return
         }
 
         if (state.password.isBlank()) {
-            _loginState.update { it.copy(errorMessage = "Password is required") }
+            _loginState.update { it.copy(errorMessage = context.getString(R.string.lvm9_password_is_required)) }
             Log.d("LoginViewModel", "Password is blank.")
             return
         }
@@ -152,7 +158,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                                 _loginState.update {
                                     it.copy(
                                         isLoading = false,
-                                        errorMessage = "User ID not found"
+                                        errorMessage = context.getString(R.string.lvm9_user_id_not_found)
                                     )
                                 }
                             }
@@ -169,7 +175,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                 _loginState.update {
                     it.copy(
                         isLoading = false,
-                        errorMessage = "Login failed: ${e.message}"
+                        errorMessage = context.getString(R.string.lvm9_login_failed, e.message)
                     )
                 }
             }
@@ -236,7 +242,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                     _loginState.update {
                         it.copy(
                             isLoading = false,
-                            errorMessage = "Account not found. Please register first."
+                            errorMessage = context.getString(R.string.lvm9_account_not_found)
                         )
                     }
                 }
@@ -247,7 +253,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                 _loginState.update {
                     it.copy(
                         isLoading = false,
-                        errorMessage = "Database error: ${error.message}"
+                        errorMessage = context.getString(R.string.lvm9_database_error, error.message)
                     )
                 }
             }
@@ -270,7 +276,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                     _loginState.update {
                         it.copy(
                             isLoading = false,
-                            errorMessage = "Invalid email or password"
+                            errorMessage = context.getString(R.string.lvm9_invalid_email_or_password)
                         )
                     }
                     return@launch
@@ -283,7 +289,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                     _loginState.update {
                         it.copy(
                             isLoading = false,
-                            errorMessage = "Invalid email or password"
+                            errorMessage = context.getString(R.string.lvm9_invalid_email_or_password)
                         )
                     }
                     return@launch
@@ -307,7 +313,7 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
                 _loginState.update {
                     it.copy(
                         isLoading = false,
-                        errorMessage = "Login failed: ${e.message}"
+                        errorMessage = context.getString(R.string.lvm9_login_failed, e.message)
                     )
                 }
             }
@@ -330,11 +336,11 @@ class LoginViewModel(private val dao: UserDao, private val sessionManager: Sessi
     }
 
 
-    class LoginViewModelFactory(private val userDao: UserDao, private val sessionManager: SessionManager) : ViewModelProvider.Factory {
+    class LoginViewModelFactory(private val userDao: UserDao, private val sessionManager: SessionManager, private val context: Context) : ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
                 @Suppress("UNCHECKED_CAST")
-                return LoginViewModel(userDao,sessionManager) as T
+                return LoginViewModel(userDao,sessionManager,context) as T
             }
             throw IllegalArgumentException("Unknown ViewModel class")
         }
