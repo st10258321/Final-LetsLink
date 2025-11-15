@@ -49,7 +49,7 @@ class AccountFragment : Fragment() {
         name.text = nameUser
         val userId = sharedPref.getString(SessionManager.KEY_USER_ID, "")
         lifecycleScope.launch {
-          val user =   userDao.getUserById(userId!!)
+          val user = userDao.getUserById(userId!!)
             if(user != null){
                 dateOfBirth.text = user.dateOfBirth
             }
