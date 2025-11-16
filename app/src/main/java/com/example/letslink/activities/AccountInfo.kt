@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.letslink.R
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.letslink.SessionManager
 import com.example.letslink.local_database.LetsLinkDB
@@ -56,18 +57,24 @@ class AccountFragment : Fragment() {
         }
         if(user?.emergencyContact != ""){
             emergencyContact.setText(user?.emergencyContact)
+            emergencyContact.setTextColor(ContextCompat.getColor(requireContext(),R.color.orange_primary))
+        }else{
+            emergencyContact.setText("No emergency contact set - start with 0")
         }
         }
         saveBtn.setOnClickListener {
             //format the contact number
             val eNumber = emergencyContact.text.toString()
             var formattedNumber = eNumber.replace(Regex("[^0-9]"), "")
-            if(formattedNumber.startsWith("0")){
-                formattedNumber = "27" + formattedNumber.drop(1)
-            }else if(eNumber.length != 10){
-                Toast.makeText(requireContext(),"Invalid number",Toast.LENGTH_SHORT).show()
+            if(formattedNumber.length != 10){
+                Toast.makeText(requireContext(),"Invalid number length",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            if(!formattedNumber.startsWith("0")){
+                Toast.makeText(requireContext(),"Number must start with 0",Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            formattedNumber = "27" + formattedNumber.drop(1)
 
 
             //save the emergency contact to online and local database
