@@ -86,7 +86,7 @@ class LoginPage : AppCompatActivity() {
         val emailEditText: EditText = findViewById(R.id.email_edit_text)
         val passwordEditText: EditText = findViewById(R.id.password_edit_text)
 
-        //biometric components
+        //biometric components (Philipp Lackner,2024)
         rememberMeCheckbox = findViewById(R.id.remember_me_checkbox)
         biometricLoginButton = findViewById(R.id.biometric_login_button)
         initBiometricAuth()
@@ -286,3 +286,7 @@ class LoginPage : AppCompatActivity() {
         }
     }
 }
+/**
+Reference List for part 3
+Philipp Lackner.2024. How to Implement Biometric Auth in Your Android App. [online] Youtube. Available at: https://youtu.be/_dCRQ9wta-I?si=er-1QGmdIAD1QFbQ [Accessed 16 November 2025].
+*/
