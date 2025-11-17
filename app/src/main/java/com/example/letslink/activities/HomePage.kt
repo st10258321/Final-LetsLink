@@ -207,7 +207,7 @@ class HomeFragment : Fragment() {
         val holdRunnable = Runnable {
             Log.d("SOS", "Runnabke Fired")
             isHolding = true
-
+            //(Garcia, 2018)
             if (phoneNumber.isNotEmpty()) {
                 val url =
                     "https://api.whatsapp.com/send?phone=$phoneNumber&text=${Uri.encode(message)}"
@@ -360,6 +360,7 @@ class HomeFragment : Fragment() {
         builder.setNegativeButton("Cancel", null)
         builder.show()
     }
+    //(Android, 2025)
        @RequiresPermission(allOf = [Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION])
     private fun getCurrentLocation(context: Context, callback: (String?) -> Unit) {
         val locationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
@@ -405,3 +406,7 @@ class HomeFragment : Fragment() {
         translationManager.cleanup()
     }
 }
+/*
+Android (2025). Get the last known location | Sensors and location. [online] Android Developers. Available at: https://developer.android.com/develop/sensors-and-location/location/retrieve-current.
+Garcia, Pablo.C. (2018). How to open WhatsApp using an Intent in your Android App. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/38422300/how-to-open-whatsapp-using-an-intent-in-your-android-app.
+*/
